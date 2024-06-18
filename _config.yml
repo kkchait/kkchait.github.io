@@ -1,0 +1,8 @@
+title: My Portfolio
+description: Showcase of my work
+baseurl: ""
+url: "https://ckundety.github.io"
+theme: minima
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
