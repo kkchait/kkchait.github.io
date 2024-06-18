@@ -1,29 +1,15 @@
-/* Reset some default browser styles */
-body, h1, h2, h3, h4, h5, h6, p, ul, ol {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* Import Bootstrap CSS */
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css";
 
-/* Body styling */
+/* Custom styles */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background-color: #f4f4f4;
-    padding: 20px;
+    padding-top: 20px;
 }
 
-/* Container to wrap content */
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: #fff;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Header styling */
 header {
     background: #333;
     color: #fff;
@@ -35,7 +21,6 @@ header h1 {
     margin: 0;
 }
 
-/* Footer styling */
 footer {
     background: #333;
     color: #fff;
@@ -44,46 +29,26 @@ footer {
     margin-top: 20px;
 }
 
-footer p {
-    margin: 0;
-}
-
-/* Navigation styling */
-nav {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
 nav a {
-    color: #333;
+    color: #fff;
     text-decoration: none;
-    padding: 10px;
-    margin: 0 5px;
-    background: #f4f4f4;
-    border: 1px solid #ddd;
+    padding: 10px 15px;
+    display: inline-block;
 }
 
 nav a:hover {
     background: #ddd;
-}
-
-/* Typography */
-h1, h2, h3, h4, h5, h6 {
-    margin-bottom: 15px;
     color: #333;
 }
 
-p {
-    margin-bottom: 15px;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-ul, ol {
-    margin-bottom: 15px;
-    padding-left: 20px;
-}
-
-/* Project section */
 .project {
     border-bottom: 1px solid #ddd;
     padding-bottom: 15px;

@@ -6,3 +6,9 @@ theme: minima
 plugins:
   - jekyll-seo-tag
   - jekyll-feed
+
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  style: compressed
