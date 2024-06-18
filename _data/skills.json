@@ -1,0 +1,112 @@
+{
+    "skillset": [
+        {
+            "key": "Subject areas",
+            "value": [
+                "ML",
+                "AI",
+                "MLOps",
+                "Deep Learning",
+                "Data Science",
+                "Computer Vision",
+                "NLP",
+                "LLMs"
+            ]
+        },
+
+        {
+            "key": "Programming languages",
+            "value": [
+                "Python",
+                "Java",
+                "Scala",
+                "SQL",
+                "Bash Shell",
+                "R",
+                "C++",
+                "Regex",
+                "LaTeX"
+            ]
+        },
+
+        {
+            "key": "ML concepts",
+            "value": [
+                "OpenAI",
+                "SciKit-learn",
+                "Spark MLlib",
+                "Tensorflow",
+                "Keras",
+                "PyTorch",
+                "LangChain",
+                "HuggingFace",
+                "ONNX",
+                "AWS Sagemaker",
+                "Azure AI Studio"
+            ]
+        },
+
+        {
+            "key": "Databases",
+            "value": [
+                "Qdrant",
+                "Elasticsearch",
+                "Hive",
+                "Hbase",
+                "Redis",
+                "Ignite",
+                "DBFS",
+                "Cassandra",
+                "Accumulo",
+                "Oracle",
+                "MySQL",
+                "Postgres",
+                "Teradata",
+                "Redshift"
+            ]
+        },
+
+        {
+            "key": "Data science",
+            "value": [
+                "Hadoop",
+                "Spark",
+                "tidyr",
+                "dplyr",
+                "openCV",
+                "pandas",
+                "numpy",
+                "matplotlib"
+            ]
+        },
+
+        {
+            "key": "Web development",
+            "value": [
+                "flask",
+                "streamlit",
+                "falcon",
+                "django",
+                "play",
+                "JAX-RS",
+                "spring",
+                "jersey"
+            ]
+        },
+
+        {
+            "key": "Platforms",
+            "value": [
+                "Azure",
+                "AWS",
+                "Docker",
+                "Datastax",
+                "Kafka",
+                "Redis",
+                "GridGain",
+                "Databricks"
+            ]
+        }
+    ]
+}
+  

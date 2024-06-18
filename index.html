@@ -1,0 +1,101 @@
+---
+layout: single
+---
+
+<header>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <!-- Home section -->
+  <section id="home">
+    <h1>Welcome to my portfolio!</h1>
+    <p>Summary of your experience and skills.</p>
+  </section>
+
+  <!-- About section -->
+  <section id="about">
+    <h1>About me</h1>
+    <p>Brief bio or summary of who you are.</p>
+  </section>
+
+  <!-- Skills section -->
+  <section id="skills">
+    <h1>Technical skills</h1>
+    <ul>
+      {% for skill in site.data.skills %}
+        <li>{{ skill }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Experience section -->
+  <section id="experience">
+    <h1>Work experience</h1>
+    <ol>
+      {% for experience in site.data.experience %}
+        <li>
+          <h2>{{ experience.company }} ({{ experience.from }} - {{ experience.to }})
+          <p>{{ experience.title }}</p>
+          <ul>
+            {% for accomplishment in experience.accomplishments %}
+              <li>
+                <h3>{{ accomplishment.project }}</h3>
+                <p>{{ accomplishment.goal }}</p>
+                <ul>
+                  {% for contribution in accomplishment.contributions %}
+                    <li>{{ contribution }}</li>
+                  {% endfor %}
+                </ul>
+              </li>
+            {% endfor %}
+          </ul>
+        </li>
+      {% endfor %}
+    </ol>
+  </section>
+
+  <!-- Portfolio section -->
+  <section id="portfolio">
+    <h1>Portfolio</h1>
+    <ul>
+      {% for experience in site.data.experience %}
+        <li>
+          {{ experience.company }}
+          {{ experience.from }} - {{ experience.to }}
+          {{ experience.title }}
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <!-- Contact section -->
+  <section id="contact">
+    <h1>Get in touch</h1>
+    <p>Contact information (email, phone number, etc.).</p>
+  </section>
+</main>
+
+<script>
+  // Add event listener to header links
+  const headerLinks = document.querySelectorAll('header nav ul li a');
+  headerLinks.forEach((link) => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const targetSectionId = link.href.split('#')[1];
+      const sectionElement = document.getElementById(targetSectionId);
+      sectionElement.scrollIntoView({
+        behavior: 'smooth',
+      });
+    });
+  });
+</script>
