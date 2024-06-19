@@ -1,0 +1,26 @@
+{
+    "languages": [
+        {
+            "key": "Native",
+            "value": [
+                "Telugu"
+            ]
+        },
+
+        {
+            "key": "Fluent",
+            "value": [
+                "English",
+                "Hindi",
+                "Tamil"
+            ]
+        },
+
+        {
+            "key": "Beginner",
+            "value": [
+                "German"
+            ]
+        }
+    ]
+}

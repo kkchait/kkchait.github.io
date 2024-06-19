@@ -1,0 +1,34 @@
+{
+    "summary": {
+        "introduction": "I'm a passionate software engineer with 10+ years experience, focusing on Machine Learning, Deep Learning, Big Data, Software Development. I have extensive experience in solving complex problems using Computer Vision, Natural Language Processing, Data Analytics, Data Engineering techniques in healthcare, e-commerce, finance, technology and automobile industries. I am currently leading the Machine Learning team at Programming.com to improve business processes in pharmaceutical research by leveraging Deep Learning, generative AI, and LLMs. If you're looking to hire, collaborate, or require any assistance, leave me an email.",
+        
+        "keywords": ["Artificial Intelligence", "Machine Learning", "Data Science", "Big Data", "Software Development", "Full-Stack", "Research"],
+
+        "bullets": [
+            {
+                "key": "Expertise",
+                "value": "Proficient in machine learning, AI, MLOps, deep learning, data science, computer vision, NLP, and LLMs."
+            },
+
+            {
+                "key": "Data Handling",
+                "value": "Experienced in architecting and implementing data solutions at a petabyte scale, ensuring robust and scalable data handling capabilities."
+            },
+
+            {
+                "key": "Contributions",
+                "value": "Extensive experience in building cutting-edge applications, focusing on innovation, scalability, and robustness in healthcare, e-commerce, banking and technology domains."
+            },
+
+            {
+                "key": "Leadership",
+                "value": "Guided cross-functional teams, mentored junior members, engaged in stakeholder meetings for project acquisitions and proposals, and consistently delivered high-quality work."
+            },
+
+            {
+                "key": "Ideation",
+                "value": "Quick learner and ability to adapt to changing organizational goals and employ new ideas, concepts and methodologies."
+            }
+        ]
+    }
+}
