@@ -1,14 +1,38 @@
-title: My Portfolio
-description: Showcase of my work
-baseurl: ""
-url: "https://ckundety.github.io"
-theme: minima
-plugins:
-  - jekyll-seo-tag
-  - jekyll-feed
+# Site settings
+title: "Chaitanya's Portfolio"
+email: chaitanyakun@outlook.com
+description: "A portfolio website showcasing my projects, education, and skills."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://ckundety.github.io" # the base hostname & protocol for your site
 
+# Build settings
 markdown: kramdown
-highlighter: rouge
+theme: minima
 
-sass:
-  style: compressed
+# Include the following paths in the Jekyll build
+include:
+  - _pages
+
+# Exclude the following paths from the Jekyll build
+exclude:
+  - node_modules
+  - vendor
+  - Gemfile
+  - Gemfile.lock
+
+# Configuring plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Enabling GitHub Pages gem
+github: 
+  is_project_page: true
+
+# Additional configurations
+permalink: pretty
+paginate: 5
+paginate_path: "/page:num/"
+
+# Enabling relative permalinks
+relative_permalinks: true
