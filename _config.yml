@@ -4,45 +4,42 @@ author:
   email: "chaitanyakun@outlook.com"
 title: "Chaitanya Kundety | Portfolio"
 email: chaitanyakun@outlook.com
-description: "A portfolio website showcasing my projects, education, and skills."
-baseurl: "" # the subpath of your site, e.g. /blog
+description: "Portfolio website showcasing my projects, education, and skills."
+baseurl: ""
 url: "https://ckundety.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
 theme: minima
 
-# Include the following paths in the Jekyll build
-include:
-  - _pages
-
-# Exclude the following paths from the Jekyll build
 exclude:
   - node_modules
   - vendor
   - Gemfile
   - Gemfile.lock
+  - README.md
 
-# Configuring plugins
+# GitHub settings
+github: 
+  is_project_page: false
+
+# Configure plugins
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Enabling GitHub Pages gem
-github: 
-  is_project_page: true
-
 # Additional configurations
 permalink: pretty
-paginate: 5
-paginate_path: "/page:num/"
 
-# Enabling relative permalinks
-relative_permalinks: true
+# Sitemap settings
+sitemap:
+  changefreq: 'monthly'
+  priority: 1.0
 
 # SEO settings
 seo:
+  type: "website"
   title: "{{ page.title | default: site.title }}"
   description: "{{ page.excerpt | default: site.description }}"
   url: "{{ site.url }}{{ site.baseurl }}"
