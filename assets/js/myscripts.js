@@ -28,8 +28,8 @@ $(document).ready(function() {
         $("body").html(rendered);
         
         // Set the page title
-        var title = data.personal.firstname + " " + data.personal.lastname + " | Portfolio"
-        $(document).prop("title", title);
+        // var title = data.personal.firstname + " " + data.personal.lastname + " | Portfolio"
+        // $(document).prop("title", title);
 
         // Initialize carousel
         $('.carousel').carousel({

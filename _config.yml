@@ -29,7 +29,7 @@ plugins:
   - jekyll-seo-tag
 
 # Additional configurations
-permalink: pretty
+permalink: /:title/
 
 # Sitemap settings
 sitemap:
