@@ -22,32 +22,19 @@ $(document).ready(function() {
         data.projects = projects;
         
         // Compile template
-        var source = $("#portfolio-template").html();
+        var source = $("body").html();
         var template = Handlebars.compile(source);
-        var html = template(data);
-        $("#portfolio-content").html(html);
-
+        var rendered = template(data);
+        $("body").html(rendered);
+        
         // Set the page title
         var title = data.personal.firstname + " " + data.personal.lastname + " | Portfolio"
         $(document).prop("title", title);
-
-        // Replace brand name in navbar
-        var brandText = data.personal.firstname;
-        $("#brandName").html(brandText);
-        
-        // Replace name in footer
-        var footerCopyText = "&copy; 2024 " + data.personal.firstname + " " + data.personal.lastname;
-        $('#footerCopy').html(footerCopyText);
 
         // Initialize carousel
         $('.carousel').carousel({
             interval: 3000
         });
-
-        // Populate footer contact links
-        $("#emailLink").attr("href", "mailto:" + data.personal.email);
-        $("#linkedinLink").attr("href", data.personal.linkedin);
-        $("#githubLink").attr("href", data.personal.github);
 
         // Create word cloud for skills
         var skills = [];
@@ -93,13 +80,6 @@ $(document).ready(function() {
                 })
                 .text(function(d) { return d.text; });
         }
-    
-        // Populate skills list with simple skills
-        var skillsList = $("#skillsList");
-        data.skillset.simple.forEach(function(skill) {
-            var listItem = $("<li>").addClass("list-group-item list-group-item-dark").text(skill);
-            skillsList.append(listItem);
-        });
 
         // Smooth scrolling for navigation links
         $('a.nav-link').on('click', function(event) {

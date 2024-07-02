@@ -199,7 +199,7 @@
                     "include": true,
                     "client": "Futurewei",
                     "name": "Energy Consumption Model",
-                    "goal": "",
+                    "goal": "Modeling energy consumption of data center",
                     "description": "Developed a robust system for estimating energy consumption in data centers, resulting in optimized resource allocation."
                 },
                 {
