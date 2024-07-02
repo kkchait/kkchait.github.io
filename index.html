@@ -4,8 +4,12 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="{{ page.description | default: site.description }}">
+        <meta name="author" content="{{ site.author.name }}">
         
-        <title>My Portfolio</title>
+        {% seo %}
+        
+        <title>{{ page.title | default: site.title }}</title>
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -17,6 +21,7 @@
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"></script>
+        <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXX-X"></script> -->
         <script src="assets/js/myscripts.js"></script>
     </head>
 
@@ -42,13 +47,13 @@
 
         <!-- main content -->
         <div class="container mt-5 pt-5 text-light">
-            <div id="about">
+            <section id="about">
                 <h1 class="section-heading text-uppercase">About</h1>
                 <p class="section-subtitle text-muted">My introduction</p>
                 <hr class="section-separator">
                 <div class="row mb-3">
                     <div class="col-md-4">
-                        <img src="assets/img/me.png" alt="Profile Picture" class="img-thumbnail">
+                        <img src="assets/img/me.png" alt="{{personal.firstname}} {{personal.lastname}} - Profile Picture" class="img-thumbnail">
                     </div>
                     <div class="col-md-8">
                         <h2>{{personal.firstname}} {{personal.lastname}}</h1>
@@ -59,9 +64,9 @@
                         <a href="{{personal.github}}" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i></a></p>
                     </div>
                 </div>
-            </div>
+            </section>
 
-            <div id="skills">
+            <section id="skills">
                 <h1 class="section-heading text-uppercase">Skills</h1>
                 <p class="section-subtitle text-muted">My technical skills</p>
                 <hr class="section-separator">
@@ -81,9 +86,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         
-            <div id="projects">
+            <section id="projects">
                 <h1 class="section-heading text-uppercase">Projects</h1>
                 <p class="section-subtitle text-muted">My current and past work</p>
                 <hr class="section-separator">
@@ -115,9 +120,9 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
-            </div>
+            </section>
             
-            <div id="education">
+            <section id="education">
                 <h1 class="section-heading text-uppercase">Education</h1>
                 <p class="section-subtitle text-muted">My academic background</p>
                 <hr class="section-separator">
@@ -134,7 +139,7 @@
                     </div>
                     {{/each}}
                 </div>
-            </div>
+            </section>
         </div>
 
         <!-- footer -->
@@ -161,6 +166,14 @@
                     <p id="footerCopy">&copy; 2024 {{personal.firstname}} {{personal.lastname}}.</p>
                 </div>
             </div>
-        </footer>       
+        </footer>
+
+        <!-- google analytics -->
+        <!-- <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-XXXXXX-X');
+        </script> -->
     </body>
 </html>

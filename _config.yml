@@ -1,5 +1,8 @@
 # Site settings
-title: "Chaitanya's Portfolio"
+author:
+  name: "Chaitanya Kundety"
+  email: "chaitanyakun@outlook.com"
+title: "Chaitanya Kundety | Portfolio"
 email: chaitanyakun@outlook.com
 description: "A portfolio website showcasing my projects, education, and skills."
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -23,6 +26,7 @@ exclude:
 # Configuring plugins
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
   - jekyll-seo-tag
 
 # Enabling GitHub Pages gem
@@ -36,3 +40,9 @@ paginate_path: "/page:num/"
 
 # Enabling relative permalinks
 relative_permalinks: true
+
+# SEO settings
+seo:
+  title: "{{ page.title | default: site.title }}"
+  description: "{{ page.excerpt | default: site.description }}"
+  url: "{{ site.url }}{{ site.baseurl }}"
