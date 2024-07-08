@@ -13,10 +13,10 @@ markdown: kramdown
 theme: minima
 
 exclude:
-  - node_modules
-  - vendor
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - vendor
   - README.md
 
 # GitHub settings
@@ -37,6 +37,7 @@ sitemap:
   priority: 1.0
 
 # SEO settings
+title_separator: "|"
 seo:
   type: "website"
   title: "{{ page.title | default: site.title }}"
