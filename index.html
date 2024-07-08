@@ -172,7 +172,7 @@
                 <hr class="section-separator" />
                 <div class="timeline">
                     {% for edu in site.data.mydata.education %}
-                        <div class="timeline-item {{ 'right' if loop.index0 is odd else 'left' }}">
+                        <div class="timeline-item {% if forloop.index | modulo: 2 == 0 %}left{% else %}right{% endif %}">
                             <div class="card mb-3 bg-dark text-light">
                                 <div class="card-body">
                                     <h5 class="card-title text-primary">{{ edu.program }}</h5>
@@ -182,7 +182,7 @@
                             </div>
                         </div>
                     {% endfor %}
-                </div>                
+                </div>
             </section>
         </div>
 
