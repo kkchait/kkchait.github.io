@@ -26,7 +26,6 @@ github:
 
 # Configure plugins
 plugins:
-  - jekyll-optional-front-matter
   - jekyll-sitemap
   - jekyll-seo-tag
 
