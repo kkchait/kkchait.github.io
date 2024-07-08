@@ -3,16 +3,6 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.mydata.site.gtag.mid }}"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-
-            gtag('config', '{{ site.data.mydata.site.gtag.mid }}');
-        </script>
-
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="{{ site.data.mydata.personal.firstname }}'s portfolio website">
@@ -46,6 +36,16 @@
             }
         </script>
         
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.mydata.site.gtag.mid }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '{{ site.data.mydata.site.gtag.mid }}');
+        </script>
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="stylesheet" href="assets/css/mystyles.css">
@@ -129,16 +129,19 @@
                 <hr class="section-separator">
                 <div id="projectsCarousel" class="carousel slide" data-ride="carousel" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
+                        {% assign first_included_project_found = false %}
                         {% for project in site.data.mydata.projects %}
                             {% if project.include %}
-                                <li data-target="#projectsCarousel" data-slide-to="{{ forloop.index0 }}" class="{{ 'active' if forloop.first else '' }}"></li>
+                                <li data-target="#projectsCarousel" data-slide-to="{{ forloop.index0 }}" class="{{ 'active' if first_included_project_found == false else '' }}"></li>
+                                {% assign first_included_project_found = true %}
                             {% endif %}
                         {% endfor %}
                     </ol>                    
                     <div class="carousel-inner">
+                        {% assign first_included_project_found = false %}
                         {% for project in site.data.mydata.projects %}
                             {% if project.include %}
-                                <div class="carousel-item {{ 'active' if forloop.first else '' }}">
+                                <div class="carousel-item {{ 'active' if first_included_project_found == false else '' }}">
                                     <div class="card mb-3 bg-dark text-light">
                                         <div class="card-body text-center">
                                             <h5 class="card-title text-primary">{{ project.name }}</h5>
@@ -147,6 +150,7 @@
                                         </div>
                                     </div>
                                 </div>
+                                {% assign first_included_project_found = true %}
                             {% endif %}
                         {% endfor %}
                     </div>                    
@@ -160,6 +164,7 @@
                     </a>
                 </div>
             </section>
+
             
             <section id="education">
                 <h1 class="section-heading text-uppercase">Education</h1>
