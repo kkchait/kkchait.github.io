@@ -172,7 +172,16 @@
                 <hr class="section-separator" />
                 <div class="timeline">
                     {% for edu in site.data.mydata.education %}
-                        <div class="timeline-item {% if forloop.index | modulo: 2 == 0 %}left{% else %}right{% endif %}">
+                        {% liquid
+                        assign position = forloop.index | modulo: 2
+                        if position == 0
+                            assign side = 'right'
+                        else
+                            assign side = 'left' %}
+                        <script>
+                            console.log("edu: {{ forloop.index }} side:{% if forloop.index | modulo: 2 == 0 %}left{% else %}right{% endif %}");
+                        </script>
+                        <div class="timeline-item {{ side }}">
                             <div class="card mb-3 bg-dark text-light">
                                 <div class="card-body">
                                     <h5 class="card-title text-primary">{{ edu.program }}</h5>
