@@ -86,7 +86,7 @@
             <section id="about">
                 <h1 class="section-heading text-uppercase">About</h1>
                 <p class="section-subtitle text-muted">My introduction</p>
-                <hr class="section-separator">
+                <hr class="section-separator" />
                 <div class="row mb-3">
                     <div class="col-md-4">
                         <img src="assets/img/me.png" alt="{{ site.data.mydata.personal.firstname }} {{ site.data.mydata.personal.lastname }} - Profile Picture" class="img-thumbnail">
@@ -104,8 +104,8 @@
 
             <section id="skills">
                 <h1 class="section-heading text-uppercase">Skills</h1>
-                <p class="section-subtitle text-muted">My technical skills</p>
-                <hr class="section-separator">
+                <p class="section-subtitle text-muted">My technical competencies</p>
+                <hr class="section-separator" />
                 <div class="row">
                     <div class="col-md-6">
                         <div id="skillsWordCloud" style="height: 300px;"></div>
@@ -125,13 +125,14 @@
             <section id="projects">
                 <h1 class="section-heading text-uppercase">Projects</h1>
                 <p class="section-subtitle text-muted">My current and past work</p>
-                <hr class="section-separator">
+                <hr class="section-separator" />
                 <div id="projectsCarousel" class="carousel slide" data-ride="carousel" data-bs-ride="carousel">
                     <ol class="carousel-indicators">
                         {% assign first_included_project_found = false %}
                         {% for project in site.data.mydata.projects %}
                             {% if project.include %}
-                                <li data-target="#projectsCarousel" data-slide-to="{{ forloop.index0 }}" class="{{ 'active' if first_included_project_found == false else '' }}"></li>
+                                <!-- <li data-target="#projectsCarousel" data-slide-to="{{ forloop.index0 }}" class="{{ 'active' if first_included_project_found == false else '' }}"></li> -->
+                                <li data-target="#projectsCarousel" data-slide-to="{{ forloop.index0 }}" class="{% unless first_included_project_found %}active{% endunless %}"></li>
                                 {% assign first_included_project_found = true %}
                             {% endif %}
                         {% endfor %}
@@ -140,7 +141,7 @@
                         {% assign first_included_project_found = false %}
                         {% for project in site.data.mydata.projects %}
                             {% if project.include %}
-                                <div class="carousel-item {{ 'active' if first_included_project_found == false else '' }}">
+                                <div class="carousel-item {% unless first_included_project_found %}active{% endunless %}">
                                     <div class="card mb-3 bg-dark text-light">
                                         <div class="card-body text-center">
                                             <h5 class="card-title text-primary">{{ project.name }}</h5>
@@ -168,7 +169,7 @@
             <section id="education">
                 <h1 class="section-heading text-uppercase">Education</h1>
                 <p class="section-subtitle text-muted">My academic background</p>
-                <hr class="section-separator">
+                <hr class="section-separator" />
                 <div class="timeline">
                     {% for edu in site.data.mydata.education %}
                         <div class="timeline-item {{ 'right' if loop.index0 is odd else 'left' }}">
