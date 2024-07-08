@@ -172,12 +172,12 @@
                 <hr class="section-separator" />
                 <div class="timeline">
                     {% for edu in site.data.mydata.education %}
-                        {% liquid
-                        assign position = forloop.index | modulo: 2
-                        if position == 0
-                            assign side = 'right'
-                        else
-                            assign side = 'left' %}
+                        {% assign position = forloop.index | modulo: 2 %}
+                        {% if position == 0 %}
+                            {% assign side = 'right' %}
+                        {% else %}
+                            {% assign side = 'left' %}
+                        {% endif %}
                         <script>
                             console.log("edu: {{ forloop.index }} side:{% if forloop.index | modulo: 2 == 0 %}left{% else %}right{% endif %}");
                         </script>
