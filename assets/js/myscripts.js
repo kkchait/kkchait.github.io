@@ -9,6 +9,24 @@ Handlebars.registerHelper('odd', function(value, options) {
 
 
 $(document).ready(function() {
+    // Initialize carousel
+    $('.carousel').carousel({
+        interval: 3000
+    });
+
+    // Smooth scrolling for navigation links
+    $('a.nav-link').on('click', function(event) {
+        if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function() {
+                window.location.hash = hash;
+            });
+        }
+    });
+    
     $.getJSON('assets/json/mydata.json', function(data) {
         // Collect projects into flat list
         let projects = [];
@@ -27,15 +45,6 @@ $(document).ready(function() {
         var rendered = template(data);
         $("body").html(rendered);
         
-        // Set the page title
-        // var title = data.personal.firstname + " " + data.personal.lastname + " | Portfolio"
-        // $(document).prop("title", title);
-
-        // Initialize carousel
-        $('.carousel').carousel({
-            interval: 3000
-        });
-
         // Create word cloud for skills
         var skills = [];
         data.skillset.details.forEach(function(detailedSkills) {
@@ -80,19 +89,6 @@ $(document).ready(function() {
                 })
                 .text(function(d) { return d.text; });
         }
-
-        // Smooth scrolling for navigation links
-        $('a.nav-link').on('click', function(event) {
-            if (this.hash !== "") {
-                event.preventDefault();
-                var hash = this.hash;
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                }, 800, function() {
-                    window.location.hash = hash;
-                });
-            }
-        });
     });
 });
     

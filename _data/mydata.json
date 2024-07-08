@@ -47,31 +47,37 @@
                 "header": "Subject areas",
                 "skills": ["Machine Learning", "Artificial Intelligence", "MLOps", "Deep Learning", "Data Science", "Computer Vision", "Natural Language Processing", "Generative AI", "Large Language Models"]
             },
+
             {
                 "skip": false,
                 "header": "Programming languages",
                 "skills": ["Python", "Java", "Scala", "SQL", "Bash Shell", "R", "C++", "Regex", "LaTeX"]
             },
+
             {
                 "skip": false,
                 "header": "ML concepts",
                 "skills": ["OpenAI", "SciKit-learn", "Spark MLlib", "Tensorflow", "Keras", "PyTorch", "LangChain", "HuggingFace", "ONNX", "AWS Sagemaker", "Azure AI Studio"]
             },
+
             {
                 "skip": true,
                 "header": "Databases",
                 "skills": ["Qdrant", "Elasticsearch", "Hive", "Hbase", "Redis", "Ignite", "DBFS", "Cassandra", "Accumulo", "Oracle", "MySQL", "Postgres", "Teradata", "Redshift"]
             },
+
             {
                 "skip": true,
                 "header": "Data science",
                 "skills": ["Hadoop","Spark","tidyr","dplyr","openCV","pandas","numpy","matplotlib"]
             },
+
             {
                 "skip": true,
                 "header": "Web development",
                 "skills": ["flask","streamlit","falcon","django","play","JAX-RS","spring","jersey"]
             },
+
             {
                 "skip": false,
                 "header": "Platforms",
@@ -104,6 +110,7 @@
                 "Played a pivotal role in establishing and nurturing long-term business relationships with 3 different clients."
             ]
         },
+
         {
             "company": "Huawei",
             "from": "03/2017",
@@ -116,6 +123,7 @@
                 "Key contributor in establishing the industry-standard TPCx-IoT benchmark, facilitating fair and accurate performance comparisons across IoT platforms."
             ]
         },
+
         {
             "company": "Comcast",
             "from": "05/2015",
@@ -127,6 +135,7 @@
                 "Designed an application to deliver targeted promotional offers based on customer behaviour."
             ]
         },
+
         {
             "company": "Qualcomm",
             "from": "04/2014",
@@ -138,6 +147,7 @@
                 "Introduced an algorithm to automatically scan code repositories and report security vulnerabilities."
             ]
         },
+
         {
             "company": "Carolinas Healthcare System",
             "from": "05/2013",
@@ -327,7 +337,7 @@
     "site": {
         "baseurl": "https://ckundety.github.io",
         "title": "Chaitanya Kundety | Portfolio",
-        "description": "Chaitanya's portfolio",
+        "description": "Chaitanya's portfolio website",
         "seo": "chaitanya, kundety, krishna chaitanya, kkc, ckundety, chaitanyakun, machine learning, artificial intelligence, ml, ai, dl, genai, llm, deep learning, mlops, ai engineer, ml engineer, machine learning engineer, data scientist, data engineering, applied machine learning, ml developer, ai developer, computer vision, cv, natural language processing, nlp",
         "image": "https://ckundety.github.io/assets/img/me.jpg",
         "gtag": {
