@@ -1,0 +1,9 @@
+version: '3'
+services:
+  jekyll:
+    image: jekyll/jekyll:builder
+    command: jekyll serve --watch --drafts
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - 4000:4000
