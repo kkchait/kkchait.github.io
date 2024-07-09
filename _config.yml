@@ -18,7 +18,7 @@ exclude:
   - node_modules
   - vendor
   - README.md
-  - serve.py
+  - docker-compose.yml
 
 # GitHub settings
 github: 
