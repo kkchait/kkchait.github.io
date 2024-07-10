@@ -57,25 +57,25 @@
             {
                 "skip": false,
                 "header": "ML concepts",
-                "skills": ["OpenAI", "SciKit-learn", "Spark MLlib", "Tensorflow", "Keras", "PyTorch", "LangChain", "HuggingFace", "ONNX", "AWS Sagemaker", "Azure AI Studio"]
+                "skills": ["OpenAI", "SciKit-learn", "Spark-MLlib", "Tensorflow", "Keras", "PyTorch", "LangChain", "HuggingFace", "ONNX", "Sagemaker", "AI-Studio"]
             },
 
             {
-                "skip": true,
+                "skip": false,
                 "header": "Databases",
                 "skills": ["Qdrant", "Elasticsearch", "Hive", "Hbase", "Redis", "Ignite", "DBFS", "Cassandra", "Accumulo", "Oracle", "MySQL", "Postgres", "Teradata", "Redshift"]
             },
 
             {
-                "skip": true,
+                "skip": false,
                 "header": "Data science",
-                "skills": ["Hadoop","Spark","tidyr","dplyr","openCV","pandas","numpy","matplotlib"]
+                "skills": ["Hadoop", "Spark", "tidyr", "dplyr", "openCV", "pandas", "numpy", "matplotlib"]
             },
 
             {
-                "skip": true,
+                "skip": false,
                 "header": "Web development",
-                "skills": ["flask","streamlit","falcon","django","play","JAX-RS","spring","jersey"]
+                "skills": ["fastAPI", "flask", "streamlit", "falcon", "django", "play", "spring"]
             },
 
             {

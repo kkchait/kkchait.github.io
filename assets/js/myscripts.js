@@ -35,7 +35,8 @@ function drawSkillsCloud(data) {
         return { text: key, size: wordCounts[key] * 10 };
     });
 
-    d3.layout.cloud().size([500, 300])
+    d3.layout.cloud()
+        // .size([500, 300])
         .words(wordArray)
         .padding(5)
         .rotate(function() { return ~~(Math.random() * 2) * 90; })
@@ -45,9 +46,10 @@ function drawSkillsCloud(data) {
         .start();
 
     function draw(words) {
-        d3.select("#skillsWordCloud").append("svg")
-            .attr("width", 500)
-            .attr("height", 300)
+        d3.select("#skillsWordCloud")
+            .append("svg")
+            // .attr("width", 500)
+            // .attr("height", 300)
             .append("g")
             .attr("transform", "translate(250,150)")
             .selectAll("text")
@@ -68,7 +70,5 @@ $(document).ready(function() {
     initializeCarousel();
     
     smoothScrollNav();
-    
-    $.getJSON('assets/json/mydata.json', drawSkillsCloud);
 });
     
