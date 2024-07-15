@@ -1,8 +1,10 @@
+/* page styles */
 body {
     background-color: #303030;
     color: #ffffff;
 }
 
+/* navbar styles */
 .navbar, .footer {
     background-color: #1f1f1f;
 }
@@ -15,18 +17,19 @@ body {
     color: #007bff;
 }
 
-.section-heading {
+/* section styles */
+section .section-heading {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 10px;
 }
 
-.section-subtitle {
+section .section-subtitle {
     text-align: center;
     margin-bottom: 30px;
 }
 
-.section-separator {
+section .section-separator {
     width: 60px;
     height: 1px;
     background-color: #6c757d;
@@ -34,6 +37,176 @@ body {
     opacity: 0.2;
 }
 
+/* about section */
+#about .img-thumbnail {
+    border: none;
+    border-radius: 50%;
+}
+
+/* projects section */
+#projects .card-title {
+    margin-bottom: 1rem;
+}
+
+#projects .card.bg-secondary {
+    background-color: #495057;
+    border: none;
+}
+
+#projects .card-subtitle {
+    color: #6c757d;
+    margin-bottom: 40px;
+}
+
+#projects .bg-dark {
+    background-color: #586c80;
+}
+
+#projects .card-body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+#projects .card-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#projects .card-subtitle {
+    margin-bottom: 40px;
+}
+
+#projects .card-text {
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    word-wrap: break-word;
+    margin: 0 auto;
+}
+
+/* education section */
+#education .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#education .timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #007bff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+}
+
+#education .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* circles on timeline */
+#education .timeline-item::after {
+    content: ' ';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -12.5px;
+    background-color: #343a40;
+    border: 4px solid #007bff;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+#education .timeline-item::before {
+    content: ' ';
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 30px;
+    z-index: 1;
+    right: 30px;
+    border: 8px solid transparent;
+    border-left-color: #007bff;
+    border-right: 0;
+    margin-top: -8px;
+    margin-right: -8px;
+}
+
+#education .timeline-item.left {
+    left: 0;
+}
+
+#education .timeline-item.right {
+    left: 50%;
+}
+
+/* arrow marks on right side timeline item */
+#education .timeline-item.right::before {
+    left: 30px;
+    border: 8px solid transparent;
+    border-right-color: #007bff;
+    border-left: 0;
+    margin-left: -8px;
+    margin-right: 0;
+}
+
+#education .timeline-item.right::after {
+    left: -12.5px;
+}
+
+#education .timeline-item .card {
+    margin-bottom: 0;
+}
+
+#education .carousel-item .card {
+    height: 100%;
+}
+
+#education .carousel-control-prev-icon,
+#education .carousel-control-next-icon {
+    background-color: #007bff;
+    border-radius: 50%;
+}
+
+#education .card-body {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+}
+
+#education .card-title {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#education .card-subtitle {
+    margin-bottom: 40px;
+}
+
+#education .card-text {
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    word-wrap: break-word;
+    margin: 0 auto;
+}
+
+/* footer styles */
 .footer {
     background-color: #212529;
     padding: 1rem 0;
@@ -71,147 +244,4 @@ body {
 
 .footer p {
     margin-bottom: 0;
-}
-
-#projects .card-title {
-    margin-bottom: 1rem;
-}
-
-#projects .card.bg-secondary {
-    background-color: #495057;
-    border: none;
-}
-
-#projects .card-subtitle {
-    color: #6c757d;
-    margin-bottom: 40px;
-}
-
-#projects .bg-dark {
-    background-color: #586c80;
-}
-
-.img-thumbnail {
-    border: none;
-    border-radius: 50%;
-}
-
-.timeline {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.timeline::after {
-    content: '';
-    position: absolute;
-    width: 6px;
-    background-color: #007bff;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -3px;
-}
-
-.timeline-item {
-    padding: 10px 40px;
-    position: relative;
-    background-color: inherit;
-    width: 50%;
-}
-
-/* circles on timeline */
-.timeline-item::after {
-    content: ' ';
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    right: -12.5px;
-    background-color: #343a40;
-    border: 4px solid #007bff;
-    top: 15px;
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.timeline-item::before {
-    content: ' ';
-    height: 0;
-    position: absolute;
-    top: 22px;
-    width: 30px;
-    z-index: 1;
-    right: 30px;
-    border: 8px solid transparent;
-    border-left-color: #007bff;
-    border-right: 0;
-    margin-top: -8px;
-    margin-right: -8px;
-}
-
-.timeline-item.left {
-    left: 0;
-}
-
-.timeline-item.right {
-    left: 50%;
-}
-
-/* arrow marks on right side timeline item */
-.timeline-item.right::before {
-    left: 30px;
-    border: 8px solid transparent;
-    border-right-color: #007bff;
-    border-left: 0;
-    margin-left: -8px;
-    margin-right: 0;
-}
-
-.timeline-item.right::after {
-    left: -12.5px;
-}
-
-.timeline-item .card {
-    margin-bottom: 0;
-}
-
-/* .carousel-item {
-    height: 300px;
-} */
-
-.carousel-item .card {
-    height: 100%;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: #007bff;
-    border-radius: 50%;
-}
-
-.card-body {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    height: 100%;
-}
-
-.card-title {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-.card-subtitle {
-    margin-bottom: 40px;
-}
-
-.card-text {
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    word-wrap: break-word;
-    margin: 0 auto;
 }
