@@ -1,9 +1,3 @@
-function initializeCarousel() {
-    $('.carousel').carousel({
-        interval: 3000
-    });
-}
-
 function smoothScrollNav() {
     $('a.nav-link').on('click', function(event) {
         if (this.hash !== "") {
@@ -36,7 +30,7 @@ function drawSkillsCloud(data) {
     });
 
     d3.layout.cloud()
-        // .size([500, 300])
+        .size([500, 300])
         .words(wordArray)
         .padding(5)
         .rotate(function() { return ~~(Math.random() * 2) * 90; })
@@ -48,8 +42,8 @@ function drawSkillsCloud(data) {
     function draw(words) {
         d3.select("#skillsWordCloud")
             .append("svg")
-            // .attr("width", 500)
-            // .attr("height", 300)
+            .attr("width", 500)
+            .attr("height", 300)
             .append("g")
             .attr("transform", "translate(250,150)")
             .selectAll("text")
@@ -67,8 +61,6 @@ function drawSkillsCloud(data) {
 }
 
 $(document).ready(function() {
-    initializeCarousel();
-    
     smoothScrollNav();
 });
     

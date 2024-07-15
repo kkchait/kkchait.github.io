@@ -65,22 +65,18 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a id="brandName" class="navbar-brand text-uppercase d-flex align-items-center" href="#">
                 <img src="assets/img/favicon.png" alt="" width="18" height="18" class="d-inline-block align-center mr-2"/>
-                {{ site.data.mydata.personal.firstname }}
+                <span style="margin-left: 5px;">{{ site.data.mydata.personal.firstname }}</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a href="#about" class="nav-link" >About</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link" >Skills</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link" >Projects</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link" >Education</a></li>
                 </ul>
-                <!-- <a href="#about" class="nav-link" >About</a>
-                <a href="#skills" class="nav-link" >Skills</a>
-                <a href="#projects" class="nav-link" >Projects</a>
-                <a href="#education" class="nav-link" >Education</a> -->
             </div>
         </nav>
 
@@ -168,31 +164,30 @@
                 <p class="section-subtitle text-muted">My current and past work</p>
                 <hr class="section-separator" />
                 <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <ol class="carousel-indicators">
-                        {% assign first_included_project_found = false %}
-                        {% for project in site.data.mydata.projects %}
-                            {% if project.include %}
-                                <!-- <li data-target="#projectsCarousel" data-slide-to="{{ forloop.index0 }}" class="{{ 'active' if first_included_project_found == false else '' }}"></li> -->
-                                <li data-target="#projectsCarousel" data-bs-slide-to="{{ forloop.index0 }}" class="{% unless first_included_project_found %}active{% endunless %}"></li>
-                                {% assign first_included_project_found = true %}
-                            {% endif %}
+                    {% assign included_projects = site.data.mydata.projects | where: "include", true %}
+                    <div class="carousel-indicators">
+                        {% for project in included_projects %}
+                            <button type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="{{ forloop.index0 }}" class="bg-primary {% if forloop.first %}active{% endif %}" {% if forloop.first %}aria-current="true"{% endif %} aria-label="{{ project.name }}"></button>
                         {% endfor %}
-                    </ol>                    
+                    </div>                    
                     <div class="carousel-inner">
-                        {% assign first_included_project_found = false %}
-                        {% for project in site.data.mydata.projects %}
-                            {% if project.include %}
-                                <div class="carousel-item {% unless first_included_project_found %}active{% endunless %}">
-                                    <div class="card mb-3 bg-dark text-light">
-                                        <div class="card-body text-center">
-                                            <h5 class="card-title text-primary">{{ project.name }}</h5>
-                                            <h6 class="card-subtitle mb-2 text-body-secondary">{{ project.goal }}</h6>
-                                            <p class="card-text">{{ project.description }}</p>
+                        {% for project in included_projects %}
+                            <div class="carousel-item {% if forloop.first %}active{% endif %}" style="padding: 120px;" data-bs-interval="3000">
+                                <div class="card mb-3 bg-dark text-light">
+                                    <div class="row g-0">
+                                        <div class="col-md-4">
+                                            <img class="card-img" src="assets/img/{{ project.logo }}" alt="{{ project.name }}" />
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-body">
+                                                <h5 class="card-title text-primary text-center">{{ project.name }}</h5>
+                                                <h6 class="card-subtitle mb-2 text-body-secondary text-center">{{ project.goal }}</h6>
+                                                <p class="card-text">{{ project.description }}</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                {% assign first_included_project_found = true %}
-                            {% endif %}
+                            </div>
                         {% endfor %}
                     </div>                    
                     <a class="carousel-control-prev" href="#projectsCarousel" role="button" data-bs-slide="prev">
@@ -211,24 +206,26 @@
                 <h1 class="section-heading text-uppercase">Education</h1>
                 <p class="section-subtitle text-muted">My academic background</p>
                 <hr class="section-separator" />
-                <div class="timeline">
-                    {% for edu in site.data.mydata.education %}
-                        {% assign position = forloop.index | modulo: 2 %}
-                        {% if position == 0 %}
-                            {% assign side = 'right' %}
-                        {% else %}
-                            {% assign side = 'left' %}
-                        {% endif %}
-                        <div class="timeline-item {{ side }}">
-                            <div class="card mb-3 bg-dark text-light">
-                                <div class="card-body">
-                                    <h5 class="card-title text-primary">{{ edu.program }}</h5>
-                                    <h6 class="card-subtitle mb-2 text-muted">{{ edu.field }}</h6>
-                                    <p class="card-text">{{ edu.university }}</p>
+                <div class="container py-5">
+                    <div class="timeline">
+                        {% for edu in site.data.mydata.education %}
+                            {% assign position = forloop.index | modulo: 2 %}
+                            {% if position == 0 %}
+                                {% assign side = 'right' %}
+                            {% else %}
+                                {% assign side = 'left' %}
+                            {% endif %}
+                            <div class="timeline-item {{ side }}">
+                                <div class="card mb-3 bg-dark text-light">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">{{ edu.program }}</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted">{{ edu.field }}</h6>
+                                        <p class="card-text">{{ edu.university }}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    {% endfor %}
+                        {% endfor %}
+                    </div>
                 </div>
             </section>
         </div>
