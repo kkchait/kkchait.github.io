@@ -37,12 +37,6 @@ section .section-separator {
     opacity: 0.2;
 }
 
-/* about section */
-#about .img-thumbnail {
-    border: none;
-    border-radius: 50%;
-}
-
 /* projects section */
 #projects .card-title {
     margin-bottom: 1rem;
