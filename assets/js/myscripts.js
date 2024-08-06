@@ -60,7 +60,125 @@ function drawSkillsCloud(data) {
     }
 }
 
+/*
+function initializeConsentBannerByGeoloc() {
+    window.cookieconsent.initialise({
+        palette: {
+            popup: {
+                background: "#000"
+            },
+            button: {
+                background: "#f1d600"
+            }
+        },
+        theme: "classic",
+        content: {
+            message: "Cookies are used to improve the experience. By using this site, it is agreed to the use of cookies.",
+            dismiss: "Accept",
+            link: "Learn more",
+            href: "#",
+            target: "_self"
+        },
+        onInitialise: function (status) {
+            if (this.hasConsented()) {
+                // User has consented
+                localStorage.setItem('cookiesAccepted', 'true');
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+            } else {
+                // User has not consented
+                localStorage.setItem('cookiesAccepted', 'false');
+                gtag('consent', 'update', {
+                    'analytics_storage': 'denied'
+                });
+            }
+        },
+        onStatusChange: function (status) {
+            if (this.hasConsented()) {
+                // User has consented
+                localStorage.setItem('cookiesAccepted', 'true');
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted'
+                });
+            } else {
+                // User has not consented
+                localStorage.setItem('cookiesAccepted', 'false');
+                gtag('consent', 'update', {
+                    'analytics_storage': 'denied'
+                });
+            }
+        },
+        onRevokeChoice: function () {
+            // User has revoked consent
+            localStorage.setItem('cookiesAccepted', 'false');
+            gtag('consent', 'update', {
+                'analytics_storage': 'denied'
+            });
+        }
+    });
+
+    // Check geolocation
+    if (navigator.geolocation) {
+        navigator.geolocation.getCurrentPosition(function(position) {
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude;
+
+            // Use a geolocation API to determine the user's country based on lat/lon
+            $.getJSON(`https://geolocation-db.com/json/`, function(data) {
+                var country = data.country_code;
+                console.log("country code is " + country);
+
+                const eeaCountries = ['DE', 'FR', 'ES', 'IT', 'NL', 'BE', 'SE', 'FI', 'NO', 'DK', 'IE',
+                                      'PT', 'GR', 'AT', 'PL', 'CZ', 'HU', 'SK', 'SI', 'HR', 'BG', 'RO',
+                                      'EE', 'LV', 'LT', 'CY', 'LU', 'MT']
+                const otherCountries = ['US']
+                // Show consent banner only for users in the EEA and other countries with privacy laws
+                if (eeaCountries.includes(country) || otherCountries.includes(country)) {
+                    window.cookieconsent.show();
+                } else {
+                    // Automatically consent for users outside the EEA
+                    localStorage.setItem('cookiesAccepted', 'true');
+                    gtag('consent', 'update', {
+                        'analytics_storage': 'granted'
+                    });
+                }
+            });
+        });
+    } else {
+        // If geolocation is not supported, show the consent banner
+        window.cookieconsent.show();
+    }
+}
+*/
+
+function initializeConsentBanner() {
+    if (!localStorage.getItem('cookiesAccepted')) {
+        $('#consent-banner').show();
+    }
+
+    $('#accept-cookies').click(function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        $('#consent-banner').hide();
+        // Initialize Google Analytics here
+        gtag('consent', 'update', {
+            'analytics_storage': 'granted'
+        });
+    });
+
+    $('#decline-cookies').click(function() {
+        localStorage.setItem('cookiesAccepted', 'false');
+        $('#consent-banner').hide();
+        // Update Google Analytics consent
+        gtag('consent', 'update', {
+            'analytics_storage': 'denied'
+        });
+    });
+}
+
 $(document).ready(function() {
     smoothScrollNav();
+
+    initializeConsentBanner();
 });
     
