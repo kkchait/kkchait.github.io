@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Ravi Pandey",
+        "profession": "Senior Data Engineer",
+        "testimonial": "I worked with Chaitanya on several complex machine learning projects, and I can confidently say that he is one of the most talented and dedicated ML engineers I have ever met. Chaitanya consistently demonstrated a deep understanding of machine learning algorithms, data preprocessing techniques, and model evaluation metrics. His ability to transform raw data into actionable insights was invaluable to our team and significantly contributed to the success of our projects. Beyond technical proficiency, he is an excellent team player. He is always willing to share knowledge, mentor junior team members, and collaborate effectively across different teams. Chaitanya’s passion for continuous learning and staying updated with the latest advancements in machine learning is truly inspiring. I recommend Chaitanya for any position requiring a skilled and innovative ML engineer. He would be a tremendous asset to any organization."
+    },
+    {
+        "name": "Dr. B.B.M. Krishna Kanth",
+        "profession": "Senior Research Scientist",
+        "testimonial": "I began working with Chaitanya on an AI project when it was midway through the initial release phase. It was a pleasure seeing how much work Chaitanya had already put into it. He systematically broke down the problem, designed the system architecture, prepared the data and developed multiple models to solve the problem. He has also taken the initiative to lead the meetings with the stakeholders. He would be a great addition to any team, and I wish him the very best wherever he goes."
+    },
+    {
+        "name": "Ryan Middleton",
+        "profession": "Project Manager",
+        "testimonial": "Chaitanya is a skilled software engineer and a great team member. At SAIC, we were lucky that he could jump in and work with our existing code base right away. Chaitanya takes his work seriously and passionately. His positive attitude would be a lift to any team!"
+    }
+]

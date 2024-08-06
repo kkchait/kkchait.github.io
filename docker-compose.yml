@@ -2,7 +2,7 @@ version: '3'
 services:
   jekyll:
     image: jekyll/jekyll:builder
-    command: jekyll serve --watch --drafts
+    command: jekyll serve --watch --force_polling --drafts --verbose
     volumes:
       - .:/srv/jekyll
     ports:

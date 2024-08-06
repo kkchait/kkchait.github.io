@@ -1,0 +1,54 @@
+[
+    {
+        "program": "Master of Science",
+        "field": "Data Science and Information Systems",
+        "university": "Harrisburg University of Science and Technology",
+        "location": "Harrisburg, PA, USA",
+        "gpa": 3.92,
+        "coursework": [
+            "Machine Learning",
+            "Artificial Intelligence Principles and Applications",
+            "Sentiment Analytics",
+            "Analysis of Human Language",
+            "Analytics Principles and Applications",
+            "Analytical Methods",
+            "Business Intelligence and Decision Support Systems",
+            "Data Visualization",
+            "Exploratory Data Analytics",
+            "Functional Programming Methods for Analytics"
+        ]
+    },
+    
+    {
+        "program": "Master of Science",
+        "field": "Computer Engineering",
+        "university": "University of North Carolina at Charlotte",
+        "location": "Charlotte, NC, USA",
+        "gpa": 3.4,
+        "coursework": [
+            "Parallel Computing",
+            "Algorithms and Data Structures",
+            "Computer Architecture",
+            "High Performance Computing",
+            "GPU Computing",
+            "Embedded Systems",
+            "Real Time Operating Systems"
+        ]
+    },
+
+    {
+        "program": "Bachelor of Engineering",
+        "field": "Electrical and Electronics Engineering",
+        "university": "Anna University Chennai",
+        "location": "Chennai, TN, India",
+        "gpa": 3.5,
+        "coursework": [
+            "Computer Programming",
+            "Data Structures and Algorithms",
+            "Internetworking Technology",
+            "Object Oriented Programming",
+            "Digital Signal Processing",
+            "Neural Network and Fuzzy Logic Control"
+        ]
+    }
+]

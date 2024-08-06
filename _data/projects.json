@@ -1,0 +1,139 @@
+[
+    {
+        "include": true,
+        "client": "Incyte",
+        "logo": "matchmaker1.jpeg",
+        "name": "Matchmaker AI",
+        "goal": "Build a RAG system for upper management",
+        "description": "Designed an LLM-based enterprise RAG system that empowered business executives to efficiently search through thousands of internal documents."
+    },
+    {
+        "include": true,
+        "client": "Incyte",
+        "logo": "vitiligo.jpeg",
+        "name": "Vitiligo Tracker",
+        "goal": "Build a segmentation model for detecting vitiligo",
+        "description": "Tracked treatment progress for over 500 vitiligo patients using deep learning and computer vision techniques."
+    },
+    {
+        "include": true,
+        "client": "Incyte",
+        "logo": "sitefeas1.jpeg",
+        "name": "Clinical Site Feasibility",
+        "goal": "Build a system to search for appropriate medical facilities to conduct clinical trials",
+        "description": "Accelerated the clinical trial site selection process by 6 months through AI and deep learning methodologies."
+    },
+    {
+        "include": true,
+        "client": "Takeda",
+        "logo": "patcompl1.jpeg",
+        "name": "Patient Complaint Analysis",
+        "goal": "Build a system to generate KPIs on patient complaints about adverse reactions",
+        "description": "Developed an AI-driven application for patient complaint analysis, leveraging NLP and deep learning, resulting in a 40% reduction in manual data processing."
+    },
+    {
+        "include": true,
+        "client": "Tunespotter",
+        "logo": "tunespotter1.jpeg",
+        "name": "Audio Recognition",
+        "goal": "Build an audio recognition app, similar to Spotify",
+        "description": "Engineered an audio recognition app using cutting-edge AI embedding technology as a core product for a tech startup."
+    },
+    {
+        "include": true,
+        "client": "Williams-Sonoma",
+        "logo": "wsieda.jpg",
+        "name": "Enterprise Data Analytics",
+        "goal": "E-commerce data analytics",
+        "description": "Established a real-time e-commerce analytical system, delivering BI reports promptly and expediting decision-making by over 4 weeks."
+    },
+    {
+        "include": true,
+        "client": "SAIC Motor",
+        "logo": "saichvac.jpg",
+        "name": "HMI Climate Control",
+        "goal": "Build an intelligent, personalized in-car climate control system",
+        "description": "Conceptualized an app that automatically adjusts climate controls in cars based on personal preferences, leading to safer and enhanced driving experience."
+    },
+    {
+        "include": true,
+        "client": "SAIC Motor",
+        "logo": "saicpreddest.jpg",
+        "name": "Auto-predict Destination",
+        "goal": "Predict driving destination when car starts",
+        "description": "Pioneered a groundbreaking predictive model using historical geospatial data, enabling next-generation smart cars to accurately anticipate and adapt to drivers' destinations."
+        
+    },
+    {
+        "include": false,
+        "client": "Tesla",
+        "logo": "tmfa.jpg",
+        "name": "Generalized Auth Protocol",
+        "goal": "MFA for enterprise-wide security",
+        "description": "Built an centralized MFA system, which standardized software security across the IT infrastructure."
+    },
+    {
+        "include": false,
+        "client": "Cineo Lighting",
+        "logo": "liteblade.jpg",
+        "name": "Studio Lighting Control System",
+        "goal": "Build a RaspberryPI based system to control lighting in movie studios",
+        "description": "Designed a fully functional Raspberry-PI based control system that significantly enhanced the efficiency and speed of lighting setup in movie studios."
+    },
+    {
+        "include": true,
+        "client": "Futurewei",
+        "logo": "dc301.jpg",
+        "name": "Energy Consumption Model",
+        "goal": "Modeling energy consumption of data center",
+        "description": "Developed a robust system for estimating energy consumption in data centers, resulting in optimized resource allocation."
+    },
+    {
+        "include": true,
+        "client": "Futurewei",
+        "logo": "tpcx1.jpg",
+        "name": "TPC-Express",
+        "goal": "Benchmark for big data systems",
+        "description":"Significantly enhanced the efficiency of next-generation data centers (DC 3.0) by implementing AI-driven strategies, leading to reduced operational costs and improved performance. Key contributor in establishing the industry-standard TPCx-IoT benchmark, facilitating fair and accurate performance comparisons across IoT platforms."
+    },
+    {
+        "include": true,
+        "client": "Comcast",
+        "logo": "cmcsteda.jpg",
+        "name": "Enterprise analytics",
+        "goal": "Data engineering",
+        "description": "Modernized the enterprise system managing 20+ petabytes of data using big data technologies, resulting in a 30\\% reduction in operational costs."
+    },
+    {
+        "include": true,
+        "client": "Comcast",
+        "logo": "datacast.jpg",
+        "name": "Datacast",
+        "goal": "Xfinity targeted ad campaigns",
+        "description": "Designed an application to deliver targeted promotional offers based on customer behaviour."
+    },
+    {
+        "include": false,
+        "client": "Qualcomm",
+        "logo": "secota1.jpg",
+        "name": "SecOTA",
+        "goal": "Securely deliver upgrades to Snapdragon chipset users over the air",
+        "description": "Developed an application for secure over-the-air (OTA) firmware upgrades, ensuring reliable and efficient delivery to end users."
+    },
+    {
+        "include": false,
+        "client": "Qualcomm",
+        "logo": "scanban1.jpg",
+        "name": "Scanban",
+        "goal": "Code vulnerability scanner",
+        "description": "Introduced an algorithm to automatically scan code repositories and report security vulnerabilities."
+    },
+    {
+        "include": false,
+        "client": "Carolinas Healthcare System",
+        "logo": "spasticity1.jpg",
+        "name": "Spasticity detection",
+        "goal": "Quantify Spasticity in elbow of Parkinson's patients",
+        "description": "Implemented an algorithm to accurately measure the severity of Parkinson's disease, improving diagnostic precision. Devised a robotic arm for patient measurements and treatment analysis."
+    }
+]

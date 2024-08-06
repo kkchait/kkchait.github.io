@@ -5,33 +5,33 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="{{ site.data.mydata.site.description }}">
-        <meta name="author" content="{{ site.data.mydata.personal.firstname }} {{ site.data.mydata.personal.lastname }}">
-        <meta name="keywords" content="{{ site.data.mydata.site.seo }}">
-        <meta property="og:title" content="{{ site.data.mydata.site.title }}">
-        <meta property="og:description" content="{{ site.data.mydata.site.description }}">
+        <meta name="description" content="{{ site.data.site.description }}">
+        <meta name="author" content="{{ site.data.personal.firstname }} {{ site.data.personal.lastname }}">
+        <meta name="keywords" content="{{ site.data.site.seo }}">
+        <meta property="og:title" content="{{ site.data.site.title }}">
+        <meta property="og:description" content="{{ site.data.site.description }}">
         <meta property="og:type" content="website">
-        <meta property="og:url" content="{{ site.data.mydata.site.baseurl }}">
-        <meta property="og:image" content="{{ site.data.mydata.site.image }}">
+        <meta property="og:url" content="{{ site.data.site.baseurl }}">
+        <meta property="og:image" content="{{ site.data.site.image }}">
         <meta name="twitter:card" content="summary_large_image">
-        <meta name="twitter:title" content="{{ site.data.mydata.site.title }}">
-        <meta name="twitter:description" content="{{ site.data.mydata.site.description }}">
-        <meta name="twitter:image" content="{{ site.data.mydata.site.image }}">
+        <meta name="twitter:title" content="{{ site.data.site.title }}">
+        <meta name="twitter:description" content="{{ site.data.site.description }}">
+        <meta name="twitter:image" content="{{ site.data.site.image }}">
 
         <script type="application/ld+json">
             {
               "@context": "https://schema.org",
               "@type": "Person",
-              "name": "{{ site.data.mydata.personal.firstname }} {{ site.data.mydata.personal.lastname }}",
-              "url": "{{ site.data.mydata.site.baseurl }}",
+              "name": "{{ site.data.personal.firstname }} {{ site.data.personal.lastname }}",
+              "url": "{{ site.data.site.baseurl }}",
               "sameAs": [
-                "{{ site.data.mydata.personal.linkedin }}",
-                "{{ site.data.mydata.personal.github }}"
+                "{{ site.data.personal.linkedin }}",
+                "{{ site.data.personal.github }}"
               ],
               "jobTitle": "Machine Learning Engineer",
               "worksFor": {
                 "@type": "Organization",
-                "name": "{{ site.data.mydata.personal.organization }}"
+                "name": "{{ site.data.personal.organization }}"
               }
             }
         </script>
@@ -45,7 +45,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
         <script src="https://d3js.org/d3.v7.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/d3-cloud@1.2.5/build/d3.layout.cloud.min.js"></script>
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.mydata.site.gtag.mid }}"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.data.site.gtag.mid }}"></script>
         <script src="assets/js/myscripts.js"></script>
 
         <!-- Google tag (gtag.js) -->
@@ -54,10 +54,10 @@
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
 
-            gtag('config', '{{ site.data.mydata.site.gtag.mid }}', { cookie_flags: 'SameSite=None;Secure' });
+            gtag('config', '{{ site.data.site.gtag.mid }}', { cookie_flags: 'SameSite=None;Secure' });
         </script>
 
-        <title>{{ site.data.mydata.site.title }}</title>
+        <title>{{ site.data.site.title }}</title>
     </head>
 
     <body>
@@ -65,7 +65,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 fixed-top">
             <a id="brandName" class="navbar-brand text-uppercase d-flex align-items-center" href="#">
                 <img src="assets/img/favicon.png" alt="" width="18" height="18" class="d-inline-block align-center mr-2"/>
-                <span style="margin-left: 5px;">{{ site.data.mydata.personal.firstname }}</span>
+                <span style="margin-left: 5px;">{{ site.data.personal.firstname }}</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -76,6 +76,7 @@
                     <li class="nav-item"><a href="#skills" class="nav-link" >Skills</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link" >Projects</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link" >Education</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 </ul>
             </div>
         </nav>
@@ -88,16 +89,16 @@
                 <hr class="section-separator" />
                 <div class="row">
                     <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
-                        <img class="img-fluid rounded-circle" src="assets/img/me.png" alt="{{ site.data.mydata.personal.firstname }}'s profile picture">
+                        <img class="img-fluid rounded-circle" src="assets/img/me.png" alt="{{ site.data.personal.firstname }}'s profile picture">
                     </div>
                     <div class="col-md-8 d-flex flex-column justify-content-center">
-                        <h2>{{ site.data.mydata.personal.firstname }} {{ site.data.mydata.personal.lastname }}</h2>
-                        <p class="text-break">{{ site.data.mydata.summary.introduction }}</p>
-                        <p class="text-break"><strong>Keywords: </strong>{{ site.data.mydata.summary.keywords | join: ' | ' }}</p>
+                        <h2>{{ site.data.personal.firstname }} {{ site.data.personal.lastname }}</h2>
+                        <p class="text-break">{{ site.data.summary.introduction }}</p>
+                        <p class="text-break"><strong>Keywords: </strong>{{ site.data.summary.keywords | join: ' | ' }}</p>
                         <p>
-                            <a href="mailto:{{ site.data.mydata.personal.email }}" class="btn btn-primary"><i class="fas fa-envelope"></i></a>
-                            <a href="{{ site.data.mydata.personal.linkedin }}" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i></a>
-                            <a href="{{ site.data.mydata.personal.github }}" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                            <a href="mailto:{{ site.data.personal.email }}" class="btn btn-primary"><i class="fas fa-envelope"></i></a>
+                            <a href="{{ site.data.personal.linkedin }}" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i></a>
+                            <a href="{{ site.data.personal.github }}" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i></a>
                         </p>
                     </div>
                 </div>
@@ -121,7 +122,7 @@
                     <div class="col-md-6 d-flex">
                         <div class="card bg-dark text-light flex-fill">
                             <ul class="list-group list-group-flush">
-                                {% for item in site.data.mydata.skillset.simple %}
+                                {% for item in site.data.skillset.simple %}
                                     <li class="list-group-item bg-dark text-primary">{{ item }}</li>
                                 {% endfor %}
                             </ul>
@@ -140,7 +141,7 @@
                         </div>
                         <div class="modal-body">
                             <ol class="list-group">
-                                {% for d in site.data.mydata.skillset.details %}
+                                {% for d in site.data.skillset.details %}
                                     {% unless d.skip %}
                                         <li class="list-group-item">
                                             <div class="ms-2 me-auto">
@@ -164,7 +165,7 @@
                 <p class="section-subtitle text-muted">My current and past work</p>
                 <hr class="section-separator" />
                 <div id="projectsCarousel" class="carousel slide" data-bs-ride="carousel">
-                    {% assign included_projects = site.data.mydata.projects | where: "include", true %}
+                    {% assign included_projects = site.data.projects | where: "include", true %}
                     <div class="carousel-indicators">
                         {% for project in included_projects %}
                             <button class="bg-primary {% if forloop.first %}active{% endif %}" type="button" data-bs-target="#projectsCarousel" data-bs-slide-to="{{ forloop.index0 }}" {% if forloop.first %}aria-current="true"{% endif %} aria-label="{{ project.name }}"></button>
@@ -208,7 +209,7 @@
                 <hr class="section-separator" />
                 <div class="container py-5">
                     <div class="timeline">
-                        {% for edu in site.data.mydata.education %}
+                        {% for edu in site.data.education %}
                             {% assign position = forloop.index | modulo: 2 %}
                             {% if position == 0 %}
                                 {% assign side = 'right' %}
@@ -228,29 +229,62 @@
                     </div>
                 </div>
             </section>
+
+
+            <section id="testimonials" class="container m-3 p-3">
+                <h1 class="section-heading text-uppercase">Testimonials</h1>
+                <p class="section-subtitle text-muted">What people say</p>
+                <hr class="section-separator" />
+                <div class="container py-5">
+                    {% for testim in site.data.testimonials %}
+                        <div class="row px-5 py-1">
+                            <figure>
+                                <blockquote class="blockquote text-break">
+                                    <p>{{ testim.testimonial }}</p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer">
+                                    <cite title="{{ testim.name }}">{{ testim.name }}, {{ testim.profession }}</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    {% endfor %}
+                </div>
+            </section>
         </main>
 
         <!-- footer -->
         <footer class="bg-dark text-lg-start mt-5 text-light">
             <div class="container p-4">
-                <div class="row mb-5">
+                <!-- <div class="row mb-5">
                     <div class="col-md-3 offset-md-3">
                         <h5 class="text-uppercase">Links</h5>
-                        <a class="list-group-item" href="#about">About</a></li>
-                        <a class="list-group-item" href="#projects">Experience</a></li>
-                        <a class="list-group-item" href="#education">Education</a></li>
-                        <a class="list-group-item" href="#skills">Skills</a></li>
-                        <!-- </div> -->
+                        <a class="list-group-item" href="#about">About</a>
+                        <a class="list-group-item" href="#skills">Skills</a>
+                        <a class="list-group-item" href="#projects">Projects</a>
+                        <a class="list-group-item" href="#education">Education</a>
+                        <a class="list-group-item" href="#testimonials">Testimonials</a>
                     </div>
                     <div class="col-md-3 offset-md-1">
                         <h5 class="text-uppercase">Contact</h5>
-                        <a class="list-group-item" href="mailto:{{ site.data.mydata.personal.email }}"><span class="me-2 fas fa-envelope"></span>Email</a></li>
-                        <a class="list-group-item" href="{{ site.data.mydata.personal.linkedin }}" target="_blank"><span class="me-2 fab fa-linkedin"></span>LinkedIn</a></li>
-                        <a class="list-group-item" href="{{ site.data.mydata.personal.github }}" target="_blank"><span class="me-2 fab fa-github"></span>GitHub</a></li>
+                        <a class="list-group-item" href="mailto:{{ site.data.personal.email }}"><span class="me-2 fas fa-envelope"></span>Email</a>
+                        <a class="list-group-item" href="{{ site.data.personal.linkedin }}" target="_blank"><span class="me-2 fab fa-linkedin"></span>LinkedIn</a>
+                        <a class="list-group-item" href="{{ site.data.personal.github }}" target="_blank"><span class="me-2 fab fa-github"></span>GitHub</a>
+                    </div>
+                </div> -->
+                <div class="row justify-content-center text-center">
+                    <div class="col-4">
+                        <div class="row">
+                            <h5 class="text-uppercase">Contact</h5>
+                        </div>
+                        <p>
+                            <a href="mailto:{{ site.data.personal.email }}" class="btn btn-primary"><i class="fas fa-envelope"></i></a>
+                            <a href="{{ site.data.personal.linkedin }}" target="_blank" class="btn btn-primary"><i class="fab fa-linkedin"></i></a>
+                            <a href="{{ site.data.personal.github }}" target="_blank" class="btn btn-primary"><i class="fab fa-github"></i></a>
+                        </p>
                     </div>
                 </div>
-                <div class="row mt-4 text-center">
-                    <p>&copy; 2024 {{ site.data.mydata.personal.firstname }} {{ site.data.mydata.personal.lastname }}.</p>
+                <div class="row text-center">
+                    <p>&copy; 2024 {{ site.data.personal.firstname }} {{ site.data.personal.lastname }}.</p>
                 </div>
             </div>
         </footer>

@@ -1,0 +1,30 @@
+{
+    "introduction": "Welcome to my portfolio! I specialize in driving transformation through cutting-edge AI, machine learning, and big data technologies, catering to both established enterprises and dynamic startups. With a proven track record of designing and implementing AI-driven systems, I empower businesses to unlock new levels of efficiency, insight, and innovation. From real-time analytics and intelligent document management to predictive analytics, data engineering, and core product development, my expertise helps organizations navigate the complexities of modern technology and achieve their strategic goals. Let’s revolutionize your business together.",
+    "keywords": ["Artificial Intelligence", "Machine Learning", "Data Science", "Big Data", "Software Engineering", "Full Stack", "Computer Science"],
+    "bullets": [
+        {
+            "header": "Expertise",
+            "point": "Proficient in machine learning, AI, MLOps, deep learning, data science, computer vision, NLP, and LLMs."
+        },
+
+        {
+            "header": "Data Handling",
+            "point": "Experienced in architecting and implementing data solutions at a petabyte scale, ensuring robust and scalable data handling capabilities."
+        },
+
+        {
+            "header": "Contributions",
+            "point": "Extensive experience in building cutting-edge applications, focusing on innovation, scalability, and robustness in healthcare, e-commerce, banking and technology domains."
+        },
+
+        {
+            "header": "Leadership",
+            "point": "Guided cross-functional teams, mentored junior members, engaged in stakeholder meetings for project acquisitions and proposals, and consistently delivered high-quality work."
+        },
+
+        {
+            "header": "Ideation",
+            "point": "Quick learner and ability to adapt to changing organizational goals and employ new ideas, concepts and methodologies."
+        }
+    ]
+}
