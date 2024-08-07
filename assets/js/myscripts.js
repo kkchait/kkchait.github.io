@@ -12,6 +12,7 @@ function smoothScrollNav() {
     });
 }
 
+/*
 function drawSkillsCloud(data) {
     var skills = [];
     data.skillset.details.forEach(function(detailedSkills) {
@@ -59,6 +60,7 @@ function drawSkillsCloud(data) {
             .text(function(d) { return d.text; });
     }
 }
+*/
 
 /*
 function initializeConsentBannerByGeoloc() {

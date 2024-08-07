@@ -1,22 +1,3 @@
-/* page styles */
-body {
-    background-color: #303030;
-    color: #ffffff;
-}
-
-/* navbar styles */
-.navbar, .footer {
-    background-color: #1f1f1f;
-}
-
-.navbar-nav .nav-item .nav-link {
-    color: #f8f9fa;
-}
-
-.navbar-nav .nav-item .nav-link:hover {
-    color: #007bff;
-}
-
 /* section styles */
 section .section-heading {
     text-align: center;
@@ -35,52 +16,6 @@ section .section-separator {
     background-color: #6c757d;
     margin: 0 auto 40px auto;
     opacity: 0.2;
-}
-
-/* projects section */
-#projects .card-title {
-    margin-bottom: 1rem;
-}
-
-#projects .card.bg-secondary {
-    background-color: #495057;
-    border: none;
-}
-
-#projects .card-subtitle {
-    color: #6c757d;
-    margin-bottom: 40px;
-}
-
-#projects .bg-dark {
-    background-color: #586c80;
-}
-
-#projects .card-body {
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
-    justify-content: flex-start;
-    align-items: center;
-    padding: 20px;
-    height: 100%;
-}
-
-#projects .card-title {
-    margin-top: 10px;
-    margin-bottom: 5px;
-}
-
-#projects .card-subtitle {
-    margin-bottom: 40px;
-}
-
-#projects .card-text {
-    width: 80%;
-    max-width: 500px;
-    text-align: center;
-    word-wrap: break-word;
-    margin: 0 auto;
 }
 
 /* education section */
@@ -176,7 +111,6 @@ section .section-separator {
 #education .card-body {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     justify-content: flex-start;
     align-items: center;
     padding: 20px;
@@ -198,44 +132,4 @@ section .section-separator {
     text-align: center;
     word-wrap: break-word;
     margin: 0 auto;
-}
-
-/* footer styles */
-.footer {
-    background-color: #212529;
-    padding: 1rem 0;
-}
-
-.footer h5 {
-    margin-bottom: 1rem;
-}
-
-.footer ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.footer ul li {
-    margin-bottom: 0.5rem;
-}
-
-.footer ul li a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.footer ul li a:hover {
-    text-decoration: underline;
-}
-
-.footer .btn-primary {
-    margin-right: 0.5rem;
-}
-
-.footer .text-light {
-    color: #f8f9fa;
-}
-
-.footer p {
-    margin-bottom: 0;
 }

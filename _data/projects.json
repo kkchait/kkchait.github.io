@@ -102,7 +102,7 @@
         "logo": "cmcsteda.jpg",
         "name": "Enterprise analytics",
         "goal": "Data engineering",
-        "description": "Modernized the enterprise system managing 20+ petabytes of data using big data technologies, resulting in a 30\\% reduction in operational costs."
+        "description": "Modernized the enterprise system managing 20+ petabytes of data using big data technologies, resulting in a 30% reduction in operational costs."
     },
     {
         "include": true,
