@@ -1,19 +1,28 @@
 [
     {
+        "name": "Gurjot Singh",
+        "profession": "ML Architect",
+        "testimonial": "I had the pleasure of working closely with Chaitanya on a cutting-edge project over the past year, where their deep expertise in AI, Machine Learning, Generative AI, and Large Language Models played a pivotal role in our success. Chaitanya has an exceptional ability to bridge the gap between complex technical concepts and practical applications, consistently delivering innovative solutions that surpassed our expectations.\nChaitanya proficiency in AI and ML, especially in the fields of Generative AI, LLMs and CV, was evident in every phase of our project. Chaitanya not only brought advanced technical knowledge to the table but also demonstrated strong problem-solving skills, ensuring that we could navigate any challenges we encountered."
+    },
+
+    {
         "name": "Himanshu Shakya",
         "profession": "Machine Learning Engineer",
         "testimonial": "I have had the pleasure of working closely with Chaitanya, our Lead Machine Learning Engineer, for the past six years, and I can confidently say that he is an exceptional team leader and mentor. Throughout this period, he has consistently demonstrated an outstanding ability to guide our team in acquiring and mastering various technical skills, including software development, data engineering fundamentals, machine learning, deep learning, and MLOps.\nChaitanya possesses a deep understanding of complex technical concepts and has an exceptional talent for breaking them down into manageable and understandable parts for his team. His approach to teaching and mentoring has significantly contributed to the professional growth of each team member, myself included. Under his leadership, we have successfully tackled numerous challenging projects, thanks to his strategic vision and unwavering support.\nWhat sets Chaitanya apart is not just his technical expertise but also his remarkable interpersonal skills. He is incredibly kind, patient, and always willing to lend a helping hand. His ability to create a positive and collaborative work environment has greatly enhanced our team's productivity and morale. He fosters an atmosphere where everyone feels valued and motivated to perform at their best.\nIn summary, Chaitanya is a brilliant and compassionate leader who has made a significant impact on our team and my personal development. I am grateful for the opportunity to work with him and highly recommend him for any leadership role. His combination of technical prowess and excellent people skills make him an invaluable asset to any organization."
     },
+
     {
         "name": "Ravi Pandey",
         "profession": "Senior Data Engineer",
         "testimonial": "I worked with Chaitanya on several complex machine learning projects, and I can confidently say that he is one of the most talented and dedicated ML engineers I have ever met. Chaitanya consistently demonstrated a deep understanding of machine learning algorithms, data preprocessing techniques, and model evaluation metrics. His ability to transform raw data into actionable insights was invaluable to our team and significantly contributed to the success of our projects. Beyond technical proficiency, he is an excellent team player. He is always willing to share knowledge, mentor junior team members, and collaborate effectively across different teams. Chaitanya’s passion for continuous learning and staying updated with the latest advancements in machine learning is truly inspiring. I recommend Chaitanya for any position requiring a skilled and innovative ML engineer. He would be a tremendous asset to any organization."
     },
+
     {
         "name": "Dr. B.B.M. Krishna Kanth",
         "profession": "Senior Research Scientist",
         "testimonial": "I began working with Chaitanya on an AI project when it was midway through the initial release phase. It was a pleasure seeing how much work Chaitanya had already put into it. He systematically broke down the problem, designed the system architecture, prepared the data and developed multiple models to solve the problem. He has also taken the initiative to lead the meetings with the stakeholders. He would be a great addition to any team, and I wish him the very best wherever he goes."
     },
+    
     {
         "name": "Ryan Middleton",
         "profession": "Project Manager",
