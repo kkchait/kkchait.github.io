@@ -1,65 +1,93 @@
 [
     {
         "include": true,
-        "client": "Incyte",
-        "logo": "matchmaker1.jpeg",
+        "client": "Independent",
+        "logo": "",
+        "name": "Thermage AI",
+        "subjectArea": ["Generative AI", "diffusion models", "Computer Vision"],
+        "technology": ["instruct-pix2pix", "HuggingFace", "gradio", "PyTorch", "diffusers", "accelerate"],
+        "goal": "Visualize the effect of cosmetic surgeries",
+        "description": "Created an Instruct Pix2Pix model that specializes in cosmetic surgeries"
+    },
+    {
+        "include": true,
+        "client": "Incyte Pharmaceuticals",
+        "logo": "assets/img/logos/matchmaker1.jpeg",
         "name": "Matchmaker AI",
-        "goal": "Build a RAG system for upper management",
+        "subjectArea": ["LLMs", "Retrieval Augmented Generation (RAG)", "QnA system", "Information search"],
+        "technology": ["Python", "langchain", "chatGPT", "streamlit", "Microsoft Azure"],
+        "goal": "Build a RAG system for executive management",
         "description": "Designed an LLM-based enterprise RAG system that empowered business executives to efficiently search through thousands of internal documents."
     },
     {
         "include": true,
-        "client": "Incyte",
-        "logo": "vitiligo.jpeg",
-        "name": "Vitiligo Tracker",
-        "goal": "Build a segmentation model for detecting vitiligo",
+        "client": "Incyte Pharmaceuticals",
+        "logo": "assets/img/logos/vitiligo.jpeg",
+        "name": "Vitiligo Tracker AI",
+        "subjectArea": ["Computer Vision", "semantic segmentation", "image classification", "Convolutional Neural Networks (CNN)"],
+        "technology": ["Python", "U-Net", "DeepLab", "Mobilenet", "Xception", "ResNet", "styleGAN", "flask", "PyTorch"],
+        "goal": "Quantitatively measure vitiligo extent for clinical trial and patients' self assessment",
         "description": "Tracked treatment progress for over 500 vitiligo patients using deep learning and computer vision techniques."
     },
     {
         "include": true,
-        "client": "Incyte",
-        "logo": "sitefeas1.jpeg",
-        "name": "Clinical Site Feasibility",
-        "goal": "Build a system to search for appropriate medical facilities to conduct clinical trials",
+        "client": "Incyte Pharmaceuticals",
+        "logo": "assets/img/logos/sitefeas1.jpeg",
+        "name": "Clinical Site Feasibility AI",
+        "subjectArea": ["NLP", "LLMs", "Learning to Rank"],
+        "technology": ["Python", "PyTorch", "transformers"],
+        "goal": "Build a ranking system to identify medical facilities for conducting clinical trials",
         "description": "Accelerated the clinical trial site selection process by 6 months through AI and deep learning methodologies."
     },
     {
         "include": true,
-        "client": "Takeda",
-        "logo": "patcompl1.jpeg",
-        "name": "Patient Complaint Analysis",
-        "goal": "Build a system to generate KPIs on patient complaints about adverse reactions",
-        "description": "Developed an AI-driven application for patient complaint analysis, leveraging NLP and deep learning, resulting in a 40% reduction in manual data processing."
+        "client": "Takeda Pharmaceuticals",
+        "logo": "assets/img/logos/patcompl1.jpeg",
+        "name": "Adverse Reaction NLP AI",
+        "subjectArea": ["NLP", "sentiment analysis", "Named Entity Recognition (NER)"],
+        "technology": ["Python", "SpaCy", "PySpark"],
+        "goal": "Develop an NLP system for automatic analysis of patient complaints about adverse reactions",
+        "description": "Developed an AI-driven application for patient complaint analysis, leveraging NLP and deep learning, resulting in a 40\\% reduction in manual data processing."
     },
     {
         "include": true,
         "client": "Tunespotter",
-        "logo": "tunespotter1.jpeg",
-        "name": "Audio Recognition",
-        "goal": "Build an audio recognition app, similar to Spotify",
+        "logo": "assets/img/logos/tunespotter1.jpeg",
+        "name": "Audio Recognition AI",
+        "subjectArea": ["Deep Learning", "Audio Embedding", "Convolutional Neural Networks (CNN)"],
+        "technology": [],
+        "goal": "Engineer an audio recognition app (like Spotify) for podcasts and music",
         "description": "Engineered an audio recognition app using cutting-edge AI embedding technology as a core product for a tech startup."
     },
     {
         "include": true,
         "client": "Williams-Sonoma",
-        "logo": "wsieda.jpg",
+        "logo": "assets/img/logos/wsieda.jpg",
         "name": "Enterprise Data Analytics",
-        "goal": "E-commerce data analytics",
+        "goal": "Build a unified data analytics system for e-commerce website",
         "description": "Established a real-time e-commerce analytical system, delivering BI reports promptly and expediting decision-making by over 4 weeks."
     },
     {
         "include": true,
+        "client": "Williams-Sonoma",
+        "logo": "assets/img/logos/wsieda.jpg",
+        "name": "CCPA Compliance",
+        "goal": "Add capabilities to data plaform for CCPA privacy laws compliance",
+        "description": "Introduced new features to data platform on Azure to handle requests related to CCPA compliance."
+    },
+    {
+        "include": true,
         "client": "SAIC Motor",
-        "logo": "saichvac.jpg",
-        "name": "HMI Climate Control",
-        "goal": "Build an intelligent, personalized in-car climate control system",
+        "logo": "assets/img/logos/saichvac.jpg",
+        "name": "HVAC AI",
+        "goal": "Build an AI based personalized in-car climate control system",
         "description": "Conceptualized an app that automatically adjusts climate controls in cars based on personal preferences, leading to safer and enhanced driving experience."
     },
     {
         "include": true,
         "client": "SAIC Motor",
-        "logo": "saicpreddest.jpg",
-        "name": "Auto-predict Destination",
+        "logo": "assets/img/logos/saicpreddest.jpg",
+        "name": "Predict Destination AI",
         "goal": "Predict driving destination when car starts",
         "description": "Pioneered a groundbreaking predictive model using historical geospatial data, enabling next-generation smart cars to accurately anticipate and adapt to drivers' destinations."
         
@@ -67,71 +95,71 @@
     {
         "include": false,
         "client": "Tesla",
-        "logo": "tmfa.jpg",
-        "name": "Generalized Auth Protocol",
-        "goal": "MFA for enterprise-wide security",
+        "logo": "assets/img/logos/tmfa.jpg",
+        "name": "Generalized MFA",
+        "goal": "Build a centralized MFA API for enterprise-wide security",
         "description": "Built an centralized MFA system, which standardized software security across the IT infrastructure."
     },
     {
         "include": false,
         "client": "Cineo Lighting",
-        "logo": "liteblade.jpg",
-        "name": "Studio Lighting Control System",
-        "goal": "Build a RaspberryPI based system to control lighting in movie studios",
+        "logo": "assets/img/logos/liteblade.jpg",
+        "name": "Movie Studio Lighting Control",
+        "goal": "Build a user friendly lighting array control system for movie studios",
         "description": "Designed a fully functional Raspberry-PI based control system that significantly enhanced the efficiency and speed of lighting setup in movie studios."
     },
     {
         "include": true,
-        "client": "Futurewei",
-        "logo": "dc301.jpg",
-        "name": "Energy Consumption Model",
-        "goal": "Modeling energy consumption of data center",
+        "client": "Huawei",
+        "logo": "assets/img/logos/dc301.jpg",
+        "name": "Predictive Energy",
+        "goal": "Model the energy consumption of a data center for managing power consumption",
         "description": "Developed a robust system for estimating energy consumption in data centers, resulting in optimized resource allocation."
     },
     {
         "include": true,
-        "client": "Futurewei",
-        "logo": "tpcx1.jpg",
+        "client": "Huawei",
+        "logo": "assets/img/logos/tpcx1.jpg",
         "name": "TPC-Express",
-        "goal": "Benchmark for big data systems",
+        "goal": "Develop an industry-wide big data benchmarking specification",
         "description":"Significantly enhanced the efficiency of next-generation data centers (DC 3.0) by implementing AI-driven strategies, leading to reduced operational costs and improved performance. Key contributor in establishing the industry-standard TPCx-IoT benchmark, facilitating fair and accurate performance comparisons across IoT platforms."
     },
     {
         "include": true,
-        "client": "Comcast",
-        "logo": "cmcsteda.jpg",
+        "client": "Comcast Cable",
+        "logo": "assets/img/logos/cmcsteda.jpg",
         "name": "Enterprise analytics",
-        "goal": "Data engineering",
-        "description": "Modernized the enterprise system managing 20+ petabytes of data using big data technologies, resulting in a 30% reduction in operational costs."
+        "goal": "Build a platform for handling 20+ petabytes of enterprise data",
+        "description": "Modernized the enterprise system managing 20+ petabytes of data using big data technologies, resulting in a 30\\% reduction in operational costs."
     },
     {
         "include": true,
-        "client": "Comcast",
-        "logo": "datacast.jpg",
+        "client": "Comcast Cable",
+        "logo": "assets/img/logos/datacast.jpg",
         "name": "Datacast",
-        "goal": "Xfinity targeted ad campaigns",
+        "goal": "Automate targeted ad campaigns for existing Xfinity customers",
         "description": "Designed an application to deliver targeted promotional offers based on customer behaviour."
     },
     {
         "include": false,
         "client": "Qualcomm",
-        "logo": "secota1.jpg",
+        "logo": "assets/img/logos/secota1.jpg",
         "name": "SecOTA",
-        "goal": "Securely deliver upgrades to Snapdragon chipset users over the air",
+        "goal": "Securely deliver upgrades to Snapdragon chipset users over-the-air (OTA)",
         "description": "Developed an application for secure over-the-air (OTA) firmware upgrades, ensuring reliable and efficient delivery to end users."
     },
     {
         "include": false,
         "client": "Qualcomm",
-        "logo": "scanban1.jpg",
+        "logo": "assets/img/logos/scanban1.jpg",
         "name": "Scanban",
-        "goal": "Code vulnerability scanner",
+        "goal": "Automate identification of security vulnerabilities acroos in enterprise code",
         "description": "Introduced an algorithm to automatically scan code repositories and report security vulnerabilities."
     },
     {
         "include": false,
         "client": "Carolinas Healthcare System",
-        "logo": "spasticity1.jpg",
+        "logo": "assets/img/logos/spasticity1.jpg",
         "name": "Spasticity detection",
         "goal": "Quantify Spasticity in elbow of Parkinson's patients",
         "description": "Implemented an algorithm to accurately measure the severity of Parkinson's disease, improving diagnostic precision. Devised a robotic arm for patient measurements and treatment analysis."

@@ -1,24 +1,29 @@
 [
     {
+        "company": "Self-Employed",
+        "from": "05/2025",
+        "to": "Present",
+        "title": "Freelance Consultant",
+        "accomplishments": [
+            "Spearhead diverse project implementations by leveraging a wide spectrum of advanced technical skills across applied ML, AI, Data Science, Deep Learning, data engineering, Python, and full stack development.",
+            "Demonstrated the ability to navigate complex projects independently from conceptualization to execution, ensuring robust, scalable solutions in emerging technological domains.",
+            "Employed strategic problem-solving methodologies to deliver high-impact solutions that meet client needs while adapting to rapidly evolving market demands.",
+            "Managed multi-faceted assignments with agility and resourcefulness, establishing a foundation for long-term consulting success across various industries."
+        ]
+    },
+
+    {
         "company": "Programming.com",
         "from": "10/2017",
-        "to": "Present",
-        "title": "Machine Learning Engineer",
-        "environment": ["AWS", "Azure", "Cloudera", "Databricks", "OpenAI chatGPT", "Docker", "Python", "Scala", "Java", "Bash", "SQL"],
+        "to": "09/2024",
+        "title": "Data / AI Expert",
         "accomplishments": [
-            "Designed an LLM-based enterprise RAG system that empowered business executives to efficiently search through thousands of internal documents.",
-            "Tracked treatment progress for over 500 vitiligo patients using deep learning and computer vision techniques.",
-            "Accelerated the clinical trial site selection process by 6 months through AI and deep learning methodologies.",
-            "Developed an AI-driven application for patient complaint analysis, leveraging NLP and deep learning, resulting in a 40% reduction in manual data processing.",
-            "Engineered an audio recognition app using cutting-edge AI embedding technology as a core product for a tech startup.",
-            "Established a real-time e-commerce analytical system, delivering BI reports promptly and expediting decision-making by over 4 weeks.",
-            "Conceptualized an app that automatically adjusts climate controls in cars based on personal preferences, leading to safer and enhanced driving experience.",
-            "Pioneered a groundbreaking predictive model using historical geospatial data, enabling next-generation smart cars to accurately anticipate and adapt to drivers' destinations.",
-            "Built an centralized MFA system, which standardized software security across the IT infrastructure.",
-            "Designed a fully functional Raspberry-PI based control system that significantly enhanced the efficiency and speed of lighting setup in movie studios.",
+            "Leveraged expertise in Data Science, Data Engineering, Machine Learning, and Artificial Intelligence to deliver innovative solutions to various clients and customers.",
+            "Served as a technical expert in client meetings, aiding in project acquisitions and offering on-the-fly problem-solving suggestions.",
+            "Assumed responsibility for setting project requirements, designing application architecture, assembling teams, and leading the implementation of projects.",
             "Mentored and guided more than 10 interns and junior engineers across 5+ projects.",
             "Led international cross-functional teams of up to 20 developers, successfully delivering 5+ projects.",
-            "Provided technical expertise in implementing and delivering over 12 projects to diverse clients.",
+            "Provided technical expertise in implementing and delivering over 12 projects to clients from diverse industries.",
             "Played a pivotal role in establishing and nurturing long-term business relationships with 3 different clients."
         ]
     },
@@ -26,25 +31,24 @@
     {
         "company": "Huawei",
         "from": "03/2017",
-        "to": "03/2017",
+        "to": "06/2017",
         "title": "Data Scientist",
-        "environment": ["Cloudera Hadoop", "FusionInsight", "Spark", "java", "python"],
         "accomplishments": [
-            "Developed a robust system for estimating energy consumption in data centers, resulting in optimized resource allocation.",
-            "Significantly enhanced the efficiency of next-generation data centers (DC 3.0) by implementing AI-driven strategies, leading to reduced operational costs and improved performance.",
-            "Key contributor in establishing the industry-standard TPCx-IoT benchmark, facilitating fair and accurate performance comparisons across IoT platforms."
+            "Collaborated with Netowrking Research department to improve Futurewei Data Center products and services.",
+            "Key contributor in establishing open source TPCx-IoT benchmark, facilitating fair and accurate performance comparisons.",
+            "Significant contributor in authoring and publishing a research paper and an industry-wide specification."
         ]
     },
 
     {
-        "company": "Comcast",
+        "company": "Comcast Cable",
         "from": "05/2015",
         "to": "08/2016",
         "title": "Big Data Engineer",
-        "environment": ["Hortonworks Hadoop", "MapReduce", "Hive", "HBase", "Sqoop", "Apache Spark", "Kafka", "Teradata", "Oracle", "GridGain", "Django", "Automic UC4"],
         "accomplishments":[
-            "Modernized the enterprise system managing 20+ petabytes of data using big data technologies, resulting in a 30% reduction in operational costs.",
-            "Designed an application to deliver targeted promotional offers based on customer behaviour."
+            "Worked with the data services team to implement backend processes with cutting-edge big data technologies.",
+            "Migrated tech stack for processing 20+ petabytes of data, reducing operating costs by 30%.",
+            "Delivered targeted promotional offers to millions of Xfinity customers."
         ]
     },
 
@@ -52,11 +56,11 @@
         "company": "Qualcomm",
         "from": "04/2014",
         "to": "03/2015",
-        "title": "Security Software Engineer",
-        "environment": ["Python", "C/C++", "Django", "Cherrypy", "AngularJS", "MySQL", "Android SDK", "Android kernel", "ARM TrustZone"],
+        "title": "Software Engineer",
         "accomplishments":[
-            "Developed an application for secure over-the-air (OTA) firmware upgrades, ensuring reliable and efficient delivery to end users.",
-            "Introduced an algorithm to automatically scan code repositories and report security vulnerabilities."
+            "Joined forces with software security team to implement kernel level security features in Android smartphones.",
+            "Delivered over-the-air (OTA) firmware upgrades securely, ensuring reliable and efficient delivery to end users.",
+            "Automated the identification of security vulnerabilities code repositories across the enterprise."
         ]
     },
 
@@ -65,10 +69,10 @@
         "from": "05/2013",
         "to": "12/2013",
         "title": "Research Engineer",
-        "environment": ["Yaskava", "Microsoft Excel", "NI DAQ", "C", "Python"],
         "accomplishments":[
+            "Partnered with research wing as part of Master's thesis",
             "Implemented an algorithm to accurately measure the severity of Parkinson's disease, improving diagnostic precision.",
-            "Devised a robotic arm for patient measurements and treatment analysis."
+            "Devised a prototype robotic device for patient measurements, which helped in creating personamlized treatment plans."
         ]
     }
 ]

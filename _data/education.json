@@ -4,6 +4,9 @@
         "field": "Data Science and Information Systems",
         "university": "Harrisburg University of Science and Technology",
         "location": "Harrisburg, PA, USA",
+        "start": 2016,
+        "end": 2019,
+        "thesis": "Effective use of big data analytics platform: solutions to challenges in industries",
         "gpa": 3.92,
         "coursework": [
             "Machine Learning",
@@ -24,6 +27,9 @@
         "field": "Computer Engineering",
         "university": "University of North Carolina at Charlotte",
         "location": "Charlotte, NC, USA",
+        "start": 2012,
+        "end": 2013,
+        "thesis": "Design of an Experimental System to Measure Muscle Tone in Lower Leg for Spastic Patients",
         "gpa": 3.4,
         "coursework": [
             "Parallel Computing",
@@ -41,6 +47,8 @@
         "field": "Electrical and Electronics Engineering",
         "university": "Anna University Chennai",
         "location": "Chennai, TN, India",
+        "start": 2007,
+        "end": 2011,
         "gpa": 3.5,
         "coursework": [
             "Computer Programming",

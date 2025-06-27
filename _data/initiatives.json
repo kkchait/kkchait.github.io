@@ -1,0 +1,37 @@
+[
+    {
+        "include": true,
+        "header": "Custom PC Build",
+        "description": "Built my own workstation from scratch on a tight budget and transitioned to Linux to support high performance AI workloads."
+    },
+
+    {
+        "include": true,
+        "header": "Containerization",
+        "description": "Mastered container orchastration by deploying apps for personal use, enhancing MLOps and DevOps skills"
+    },
+
+    {
+        "include": true,
+        "header": "Agentic AI",
+        "description": "Acquired certification in CrewAI and automated workflows using LLMs."
+    },
+
+    {
+        "include": true,
+        "header": "Full Stack",
+        "description": "Experimented with Flutter/Dart to realize an app rooted in personal passion, expanding into full stack capabilities"
+    },
+
+    {
+        "include": true,
+        "header": "LoRA Models",
+        "description": "Conducted advanced LoRA models training to generate graphics for marketing content."
+    },
+
+    {
+        "include": true,
+        "header": "Generative 3D Graphics",
+        "description": "Experimented with models like Trellis to generate 3D artifacts and integrated into Unreal Engine for video game prototyping."
+    }
+]

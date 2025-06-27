@@ -41,6 +41,7 @@
                     <li class="nav-item"><a href="#about" class="nav-link" >About</a></li>
                     <li class="nav-item"><a href="#skills" class="nav-link" >Skills</a></li>
                     <li class="nav-item"><a href="#projects" class="nav-link" >Projects</a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link" >Experience</a></li>
                     <li class="nav-item"><a href="#education" class="nav-link" >Education</a></li>
                     <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
                 </ul>
@@ -67,7 +68,7 @@
                 <hr class="section-separator" />
                 <div class="row">
                     <div class="col-md-4 d-flex align-items-center justify-content-center p-5">
-                        <img class="img-fluid rounded-circle" src="assets/img/me.png" alt="{{ site.data.personal.firstname }}'s profile picture">
+                        <img class="img-fluid rounded-circle" src="{{ site.data.personal.picture }}" alt="{{ site.data.personal.firstname }}'s profile picture">
                     </div>
                     <div class="col-md-8 d-flex flex-column justify-content-center">
                         <h2>{{ site.data.personal.firstname }} {{ site.data.personal.lastname }}</h2>
@@ -90,7 +91,7 @@
                     <div class="col-md-6 d-flex">
                         <div class="card bg-body-tertiary flex-fill">
                             <div class="card-body">
-                                <img class="card-img-top" src="assets/img/skillcloud.png" alt="skills wordcloud" />
+                                <img class="card-img-top" src="{{ site.data.skillset.skillcloud }}" alt="skills wordcloud" />
                             </div>
                             <div class="card-footer text-center">
                                 <a class="card-link stretched-link" target="_blank" data-bs-toggle="modal" data-bs-target="#skillDetails">View details...</a>
@@ -158,7 +159,7 @@
                                             <div class="card bg-body-tertiary mb-3">
                                                 <div class="row g-0">
                                                     <div class="col-md-4 align-self-center">
-                                                        <img class="card-img img-fluid rounded-start" src="assets/img/{{ project.logo }}" alt="{{ project.name }}" />
+                                                        <img class="card-img img-fluid rounded-start" src="{{ project.logo }}" alt="{{ project.name }}" />
                                                     </div>
                                                     <div class="col-md-8">
                                                         <div class="card-body">
@@ -182,6 +183,35 @@
                                 </button>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section id="experience" class="container m-3 p-3">
+                <h1 class="section-heading text-uppercase">Experience</h1>
+                <p class="section-subtitle text-muted">My professional career</p>
+                <hr class="section-separator" />
+                <div class="container py-5">
+                    <div class="timeline">
+                        {% for exp in site.data.experience %}
+                            {% assign position = forloop.index | modulo: 2 %}
+                            {% if position == 0 %}
+                                {% assign side = 'right' %}
+                            {% else %}
+                                {% assign side = 'left' %}
+                            {% endif %}
+                            <div class="timeline-item {{ side }}">
+                                <div class="card bg-body-tertiary mb-3">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-primary">{{ exp.company }}</h5>
+                                        <h6 class="card-subtitle mb-2 text-muted text-break">{{ exp.title }}</h6>
+                                        <p class="card-text text-break">{{ exp.from }} - {{ exp.to }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
                     </div>
                 </div>
             </section>

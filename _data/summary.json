@@ -3,28 +3,31 @@
     "keywords": ["Artificial Intelligence", "Machine Learning", "Data Science", "Big Data", "Software Engineering", "Full Stack", "Computer Science"],
     "bullets": [
         {
-            "header": "Expertise",
-            "point": "Proficient in machine learning, AI, MLOps, deep learning, data science, computer vision, NLP, and LLMs."
+            "header": "ML/AI Expertise",
+            "point": "Deliver tailored solutions in ML, AI, MLOps, Deep Learning, Data Science, Computer Vision, NLP, and LLMs."
         },
 
         {
-            "header": "Data Handling",
-            "point": "Experienced in architecting and implementing data solutions at a petabyte scale, ensuring robust and scalable data handling capabilities."
+            "header": "Data Solutions",
+            "point": "Design and implement data solutions at petabyte scale, ensuring robust and scalable data handling capabilities."
         },
 
         {
-            "header": "Contributions",
-            "point": "Extensive experience in building cutting-edge applications, focusing on innovation, scalability, and robustness in healthcare, e-commerce, banking and technology domains."
+            "header": "Industry Impact",
+            "point": "Over 10 years experience as a consultant working with startups and enterprises in healthcare, automotive, technology, banking, e-coomerce industries, and successfully transitioning into freelance consulting career.",
+            "point_old": "Successfully implemented data driven applications at businesses ranging from startups to large enterprises in diverse sectors such as healthcare, automotive, banking, technology, and e-commerce."
         },
 
         {
-            "header": "Leadership",
-            "point": "Guided cross-functional teams, mentored junior members, engaged in stakeholder meetings for project acquisitions and proposals, and consistently delivered high-quality work."
+            "header": "Strategic Leadership",
+            "point": "Guiding cross-functional teams, mentoring emerging talent, engaging stakeholders, solution proposals, strategic planning to consistently deliver high-quality work.",
+            "point_old": "Guided cross-functional teams, mentored junior members, engaged in stakeholder meetings for project acquisitions and proposals, and consistently delivered high-quality work."
         },
 
         {
-            "header": "Ideation",
-            "point": "Quick learner and ability to adapt to changing organizational goals and employ new ideas, concepts and methodologies."
+            "header": "Adaptive Mindset",
+            "point": "Resilient professional with a proven ability to adapt to changing environments, incorporating innovative methodologies and leveraging new technologies to stay ahead in the field.",
+            "point_old": "Quick learner with a proven ability to adapt to changing organizational goals and incorporate innovative methodologies."
         }
     ]
 }

@@ -1,8 +1,11 @@
 {
     "firstname": "Chaitanya",
     "lastname": "Kundety",
-    "organization": "Programming.com",
+    "picture": "assets/img/me.jpg",
+    "address": "München, Deutschland",
     "linkedin": "https://www.linkedin.com/in/chaitanya-kundety-93227b3b/",
-    "github": "https://github.com/ckundety",
-    "email": "chaitanyakun@outlook.com"
+    "github": "https://github.com/kkchait/",
+    "website": "https://kkchait.github.io/",
+    "email": "chaitanyakun@outlook.com",
+    "mobile": "+49 176 67535079"
 }

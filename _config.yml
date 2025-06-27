@@ -7,7 +7,7 @@ email: chaitanyakun@outlook.com
 description: "Portfolio website showcasing my projects, education, and skills."
 keywords: "chaitanya, kundety, krishna chaitanya, kkc, ckundety, chaitanyakun, machine learning, artificial intelligence, ml, ai, dl, genai, llm, deep learning, mlops, ai engineer, ml engineer, machine learning engineer, data scientist, data engineering, applied machine learning, ml developer, ai developer, computer vision, cv, natural language processing, nlp"
 baseurl: ""
-url: "https://ckundety.github.io" # the base hostname & protocol for your site
+url: "https://kkchait.github.io" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

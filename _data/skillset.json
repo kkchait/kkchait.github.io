@@ -1,5 +1,6 @@
 {
     "simple": ["Machine Learning", "Artificial Intelligence", "MLOps", "Deep Learning", "Data Science", "Computer Vision", "Natural Language Processing", "Generative AI", "Large Language Models"],
+    "skillcloud": "assets/img/skillcloud.png",
     "details": [
         {
             "skip": true,
@@ -9,14 +10,38 @@
 
         {
             "skip": false,
-            "header": "Programming languages",
-            "skills": ["Python", "Java", "Scala", "SQL", "Bash Shell", "R", "C++", "Regex", "LaTeX"]
+            "header": "ML/AI Expertise",
+            "skills": ["SciKit-learn", "Spark MLlib", "Tensorflow", "Keras", "PyTorch", "LangChain", "HuggingFace", "ONNX", "AWS Sagemaker", "Azure AI Studio", "RAG", "Vector similarity", "Vector embedding", "Transformers", "GPT", "BERT", "Llama", "CNN", "RNN", "LSTM"]
         },
 
         {
             "skip": false,
-            "header": "ML concepts",
-            "skills": ["OpenAI", "SciKit-learn", "Spark-MLlib", "Tensorflow", "Keras", "PyTorch", "LangChain", "HuggingFace", "ONNX", "Sagemaker", "AI-Studio"]
+            "header": "Generative AI",
+            "skills": ["OpenAI", "Ollama", "Open WebUI", "ComfyUI", "Stable Diffusion", "Flux", "Instruct Pix2Pix"]
+        },
+
+        {
+            "skip": false,
+            "header": "Data Science Tools",
+            "skills": ["Hadoop", "Spark", "tidyr", "dplyr", "openCV", "pandas", "numpy", "matplotlib"]
+        },
+
+        {
+            "skip": false,
+            "header": "Web Development",
+            "skills": ["fastAPI", "flask", "streamlit", "gradio", "falcon", "django", "play", "spring"]
+        },
+
+        {
+            "skip": false,
+            "header": "Frontend",
+            "skills": ["Flutter", "HTML", "CSS", "Javascript"]
+        },
+
+        {
+            "skip": false,
+            "header": "Programming languages",
+            "skills": ["Python", "Java", "Scala", "SQL", "Bash Shell", "R", "C++", "Regex", "LaTeX", "Dart"]
         },
 
         {
@@ -27,20 +52,14 @@
 
         {
             "skip": false,
-            "header": "Data science",
-            "skills": ["Hadoop", "Spark", "tidyr", "dplyr", "openCV", "pandas", "numpy", "matplotlib"]
-        },
-
-        {
-            "skip": false,
-            "header": "Web development",
-            "skills": ["fastAPI", "flask", "streamlit", "falcon", "django", "play", "spring"]
-        },
-
-        {
-            "skip": false,
             "header": "Platforms",
             "skills": ["Azure", "AWS", "Docker", "Datastax", "Kafka", "Redis", "GridGain", "Databricks"]
+        },
+
+        {
+            "skip": true,
+            "header": "Graphics Design",
+            "skills": ["Unreal Engine", "Godot", "Krita", "GIMP"]
         }
     ]
 }

@@ -19,13 +19,13 @@ section .section-separator {
 }
 
 /* education section */
-#education .timeline {
+.timeline {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-#education .timeline::after {
+.timeline::after {
     content: '';
     position: absolute;
     width: 6px;
@@ -36,7 +36,7 @@ section .section-separator {
     margin-left: -3px;
 }
 
-#education .timeline-item {
+.timeline-item {
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
@@ -44,7 +44,7 @@ section .section-separator {
 }
 
 /* circles on timeline */
-#education .timeline-item::after {
+.timeline-item::after {
     content: ' ';
     position: absolute;
     width: 25px;
@@ -57,7 +57,7 @@ section .section-separator {
     z-index: 1;
 }
 
-#education .timeline-item::before {
+.timeline-item::before {
     content: ' ';
     height: 0;
     position: absolute;
@@ -72,16 +72,16 @@ section .section-separator {
     margin-right: -8px;
 }
 
-#education .timeline-item.left {
+.timeline-item.left {
     left: 0;
 }
 
-#education .timeline-item.right {
+.timeline-item.right {
     left: 50%;
 }
 
 /* arrow marks on right side timeline item */
-#education .timeline-item.right::before {
+.timeline-item.right::before {
     left: 30px;
     border: 8px solid transparent;
     border-right-color: #007bff;
@@ -90,11 +90,11 @@ section .section-separator {
     margin-right: 0;
 }
 
-#education .timeline-item.right::after {
+.timeline-item.right::after {
     left: -12.5px;
 }
 
-#education .timeline-item .card {
+.timeline-item .card {
     margin-bottom: 0;
 }
 

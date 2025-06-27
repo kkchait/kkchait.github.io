@@ -1,0 +1,16 @@
+[
+    {
+        "proficiency": "Native",
+        "languages": ["Telugu"]
+    },
+
+    {
+        "proficiency": "Fluent",
+        "languages": ["English", "Hindi", "Tamil"]
+    },
+
+    {
+        "proficiency": "Beginner",
+        "languages": ["German"]
+    }
+]
